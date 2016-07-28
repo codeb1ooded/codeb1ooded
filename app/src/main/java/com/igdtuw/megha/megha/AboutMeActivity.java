@@ -1,6 +1,7 @@
 package com.igdtuw.megha.megha;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -143,6 +144,36 @@ public class AboutMeActivity extends AppCompatActivity
     public void projectCalculator(View v){
         Intent i = new Intent();
         i.setClass(AboutMeActivity.this, ScientficCalculator.class);
+        startActivity(i);
+    }
+    public void contactGithub(View v){
+        String url = "https://github.com/megha-code";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+    public void contactFacebook(View v){
+        String url = "https://www.facebook.com/meghaaggarwal.yv";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+    public void contactLinkedin(View v){
+        String url = "https://www.linkedin.com/in/megha-aggarwal-772440104";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+    public void contactGoogle(View v){
+        String url = "https://plus.google.com/+MeghaAggarwalMe";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+    public void contactTwitter(View v){
+        String url = "https://twitter.com/Megha__Aggarwal";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
         startActivity(i);
     }
 }

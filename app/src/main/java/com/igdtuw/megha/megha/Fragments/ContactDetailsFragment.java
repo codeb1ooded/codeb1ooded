@@ -17,7 +17,11 @@ public class ContactDetailsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.contact_details_fragment, container, false);
-
+        String url = "http://www.example.com";
+        /*Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);*/
         return view;
     }
+
 }

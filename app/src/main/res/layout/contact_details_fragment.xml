@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/medium_text_size"
+        android:text="@string/contact_github"
+        android:textAlignment="center"
+        android:onClick="contactGithub"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/medium_text_size"
+        android:text="@string/contact_linkedin"
+        android:textAlignment="center"
+        android:onClick="contactLinkedin"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/medium_text_size"
+        android:text="@string/contact_facebook"
+        android:textAlignment="center"
+        android:onClick="contactFacebook"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/medium_text_size"
+        android:text="@string/contact_google"
+        android:textAlignment="center"
+        android:onClick="contactGoogle"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/medium_text_size"
+        android:text="@string/contact_twitter"
+        android:textAlignment="center"
+        android:onClick="contactTwitter"/>
 
 </LinearLayout>
