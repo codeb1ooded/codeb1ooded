@@ -1,55 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
+        android:fillViewport="true">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="@dimen/big_text_size"
-            android:text="@string/project_othello"
-            android:layout_margin="@dimen/margin"/>
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin"
-                    android:src="@drawable/project_othello1"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin"
-                    android:src="@drawable/project_othello2"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin"
-                    android:src="@drawable/project_othello3"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin"
-                    android:src="@drawable/project_othello4"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin"
-                    android:src="@drawable/project_othello5"/>
-            </LinearLayout>
-        </HorizontalScrollView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+                android:textAlignment="center"
+                android:textSize="@dimen/big_text_size"
+                android:text="@string/project_othello"
+                android:layout_margin="@dimen/margin"/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/containerProjectOthelloFragment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:textSize="@dimen/small_text_size"
+                android:textAlignment="center"
+                android:text="@string/project_description_othello"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:textSize="@dimen/small_text_size"
+                android:textAlignment="center"
+                android:text="@string/project_tech_used_othello"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
 </ScrollView>

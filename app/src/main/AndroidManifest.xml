@@ -18,16 +18,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.Project.RTIManagementSystem"
-            android:label="RTI"/>
-        <activity android:name=".Activities.Project.Eventley"
-            android:label="Eventley"/>
-        <activity android:name=".Activities.Project.MoviePlate"
-            android:label="MoviePlate"/>
-        <activity android:name=".Activities.Project.OthelloBoardGame"
-            android:label="Othello"/>
-        <activity android:name=".Activities.Project.ScientficCalculator"
-            android:label="Calculator"/>
+        <activity
+            android:name=".Activities.Project.RTIManagementSystem"
+            android:label="RTI" />
+        <activity
+            android:name=".Activities.Project.Eventley"
+            android:label="Eventley" />
+        <activity
+            android:name=".Activities.Project.MoviePlate"
+            android:label="MoviePlate" />
+        <activity
+            android:name=".Activities.Project.OthelloBoardGame"
+            android:label="Othello" />
+        <activity
+            android:name=".Activities.Project.ScientficCalculator"
+            android:label="Calculator" />
     </application>
 
 </manifest>

@@ -68,4 +68,12 @@
     <string name="skill_content_cncpp">C++ was my first language and still the default language to code. I have created a library management system in 12th in C++</string>
     <string name="skill_content_ehacking">I knows basic of Ethical Hacking and have done 40 day training of Ethical Hacking from I3indya Technologies. I learned many new things during this phase.</string>
     <string name="skill_content_frontend">I am a newbie in HTML, CSS and JS. I have learned them from sites like W3Schools, codeacademy, etc. and have used this knowledge in some of my projects also.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="project_description_othello">Othello is orignially a 1988 video game published by Acclaim Entertainment, made for the Nintendo Entertainment System. This project is also a board game based on similar concept made with help of Java and its libraries with a UI interface. (Command based also available)</string>
+    <string name="project_description_eventley">Whenever, you want to utilize your weekend in some great and enjoying holiday, you would most probably found yourselves confused of where to spend that time to make most of it. Or when you visit a new place and have no idea of main attractions of place, then what to do? That\'s where, Eventley came to rescue. Eventley help you to find popular and relevant(weather on day is fine) events near you on basis of your choice of category (like education, sports, culture, entertainment, etc.) by analyzing events based on number of likes, number of comments, number of images , weather at time of event, etc.</string>
+
+    <string name="project_tech_used_othello"><b>Technologies Used</b> \n Java and its GUI and other libraries (swing, awt, arraylist, etc.)</string>
+    <string name="project_tech_used_eventley"><b>Technologies Used</b> \n Frontend Development: HTML, CSS, JS \n Backend Development: Python and Django \n APIs: Eventful api, Google Maps, Open whether api, Plotly for visualization</string>
 </resources>
