@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/margin">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/project_rti"
+        android:textAllCaps="false"
+        android:textSize="@dimen/medium_text_size"
+        android:onClick="projectRTI"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/project_movieplate"
+        android:textAllCaps="false"
+        android:textSize="@dimen/medium_text_size"
+        android:onClick="projectMovieplate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/project_othello"
+        android:textAllCaps="false"
+        android:textSize="@dimen/medium_text_size"
+        android:onClick="projectOthello"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/project_eventley"
+        android:textAllCaps="false"
+        android:textSize="@dimen/medium_text_size"
+        android:onClick="projectEvently"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/project_scientific_calculator"
+        android:textAllCaps="false"
+        android:textSize="@dimen/medium_text_size"
+        android:onClick="projectCalculator"/>
+</LinearLayout>

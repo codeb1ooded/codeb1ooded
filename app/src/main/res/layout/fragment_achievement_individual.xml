@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/individualAchivementTitle"
+            android:textSize="@dimen/big_text_size"
+            android:layout_margin="@dimen/margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/individualAchivementText"
+            android:textSize="@dimen/medium_text_size"
+            android:layout_margin="@dimen/margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/individualAchivementOrganizer"
+            android:textSize="@dimen/medium_text_size"
+            android:layout_margin="@dimen/margin"/>
+    </LinearLayout>
+
+</ScrollView>

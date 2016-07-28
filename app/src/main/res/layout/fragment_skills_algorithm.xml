@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skill_title_algorithm"
+        android:textSize="@dimen/big_text_size"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/skill_algorithm"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skill_sub_title_algorithm"
+        android:textSize="@dimen/medium_text_size"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skill_content_algorithm"
+        android:textSize="@dimen/small_text_size"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/margin"/>
+</LinearLayout>

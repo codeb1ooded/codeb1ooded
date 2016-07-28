@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Megha</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="my_name">Megha Aggarwal</string>
+    <string name="my_title">It\'s not about what you want it\'s about how hard you want it</string>
+    <string name="short_desc">I am currently pursuing my Bachelors in Technology in Computer Science from IGDTUW. I love to code and see how it can changed the world in a way we can\'t event think of. Android App Development, Algorithms, and Operating Systems fascinates me.</string>
+    <string name="my_github_username">megha-code</string>
+
+    <string name="project_rti">RTI Management System</string>
+    <string name="project_movieplate">MoviePlate</string>
+    <string name="project_othello">Othello</string>
+    <string name="project_eventley">Eventley</string>
+    <string name="project_scientific_calculator">Scientific Calculator</string>
+
+    <string name="tech_programming_languages">Programming Languages</string>
+    <string name="tech_web_technologies">Web Technologies</string>
+    <string name="tech_app_development">Android App Development</string>
+    <string name="tech_operating_systems">Operating Systems</string>
+    <string name="tech_software_packages">Software Packages</string>
+    <string name="tech_miscellaneous">Miscellaneous</string>
+
+    <string name="courses_online">Online Courses</string>
+    <string name="courses_graduate">Graduate</string>
+    <string name="courses_outside">External Classrooms</string>
+
+    <string name="achievement_academic">Academic Achievement</string>
+    <string name="achievement_technical">Technical Achievement</string>
+    <string name="achievement_miscellaneous">Miscellaneous Achievement</string>
+
+    <string name="misc_social_work">Social Work</string>
+    <string name="misc_pos_responsibilty">Positions of responsibility</string>
+
+    <string name="skill_title_android"> Android </string>
+    <string name="skill_title_algorithm"> Algorithm </string>
+    <string name="skill_title_gitngithub"> Git \u0026 Github </string>
+    <string name="skill_title_database"> Databases </string>
+    <string name="skill_title_linux"> Linux </string>
+    <string name="skill_title_pythonndjango"> Python \u0026 Django </string>
+    <string name="skill_title_phpnxampp"> Php \u0026 Xampp </string>
+    <string name="skill_title_java"> Java </string>
+    <string name="skill_title_cncpp"> C \u0026 C++ </string>
+    <string name="skill_title_ehacking"> Ethical Hacking </string>
+    <string name="skill_title_frontend"> Html, CSS \u0026 JS</string>
+
+    <string name="skill_sub_title_android"> App Development </string>
+    <string name="skill_sub_title_algorithm"> Computational Thinking </string>
+    <string name="skill_sub_title_gitngithub"> Version Control and Social Coding </string>
+    <string name="skill_sub_title_database"> Data Storage </string>
+    <string name="skill_sub_title_linux"> Operating Systems </string>
+    <string name="skill_sub_title_pythonndjango"> Framework </string>
+    <string name="skill_sub_title_phpnxampp"> Backend Development </string>
+    <string name="skill_sub_title_java"> Programming Language </string>
+    <string name="skill_sub_title_cncpp"> Programming language</string>
+    <string name="skill_sub_title_frontend"> Front-end Development </string>
+
+    <string name="skill_content_android">I knows the basic and some advanced concepts of Android app development. Created some apps, MoviePlate being major of them. I also have worked with some libraries and git repos of them in android.</string>
+    <string name="skill_content_algorithm">Perhaps the most important principle for the good algorithm designer is to refuse to be content. OK, Can we do better?</string>
+    <string name="skill_content_gitngithub">I have hosted all my projects on github and use it to manage them on regular basis. I know basics of git and github.</string>
+    <string name="skill_content_database">Data being the important thing and its manipulation even more important, I have worked with many databases in different technologies</string>
+    <string name="skill_content_linux">Shifted to Linux from window not so long ago, I found it best operating system and use it as default. I have worked on many distros of linux like Ubuntu, CentOS, Fedora, Kali Linux, Backtrack, etc.</string>
+    <string name="skill_content_pythonndjango">I have created a website using Python and Django. I know their basics.</string>
+    <string name="skill_content_phpnxampp">My one of the best projects is in PHP, i.e., RTI management system. I learned and worked with php during my RTI project only</string>
+    <string name="skill_content_java">My language to code some of the times. I knows the basics of language and some libraries and know how to implement most of the DS in Java.</string>
+    <string name="skill_content_cncpp">C++ was my first language and still the default language to code. I have created a library management system in 12th in C++</string>
+    <string name="skill_content_ehacking">I knows basic of Ethical Hacking and have done 40 day training of Ethical Hacking from I3indya Technologies. I learned many new things during this phase.</string>
+    <string name="skill_content_frontend">I am a newbie in HTML, CSS and JS. I have learned them from sites like W3Schools, codeacademy, etc. and have used this knowledge in some of my projects also.</string>
+</resources>
