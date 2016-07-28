@@ -5,21 +5,21 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.igdtuw.megha.megha.Activities.Project.RTIManagementSystem;
+
 /**
  * Created by megha on 28/7/16.
  */
 public class ProjectRTIAdapter extends FragmentStatePagerAdapter {
-    Context context = null;
     private int numofScreens;
-    public ProjectRTIAdapter(Context context, FragmentManager fm) {
+    public ProjectRTIAdapter(FragmentManager fm) {
         super(fm);
-        this.context = context;
         numofScreens = 0;
     }
 
     @Override
     public Fragment getItem(int position) {
-        return null;
+        return RTIManagementSystem.ProjectIndividualFragment.newInstance(position+1);
     }
 
     @Override

@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/big_text_size"
+                android:text="@string/project_scientific_calculator"
+                android:layout_margin="@dimen/margin"/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/containerProjectCalculatorFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:textSize="@dimen/small_text_size"
+                android:textAlignment="center"
+                android:text="@string/project_description_calculator"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:textSize="@dimen/small_text_size"
+                android:textAlignment="center"
+                android:text="@string/project_tech_used_calculator"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</ScrollView>
