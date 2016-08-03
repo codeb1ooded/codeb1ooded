@@ -4,35 +4,35 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_about_me"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_about_me"
             android:title="About me" />
         <item
             android:id="@+id/nav_projects"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_projects"
             android:title="Projects" />
         <item
             android:id="@+id/nav_technical_skills"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_menu_manage"
             android:title="Technical Skills" />
         <item
             android:id="@+id/nav_courses"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_courses"
             android:title="Courses" />
         <item
             android:id="@+id/nav_achievements"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_achievements"
             android:title="Achievements" />
         <item
             android:id="@+id/nav_contact_details"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/ic_contact_me"
             android:title="Contact Details" />
         <item
             android:id="@+id/nav_special_credits"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_credits"
             android:title="Special Credits" />
         <item
             android:id="@+id/nav_miscellaneous"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_miscellaneous"
             android:title="Miscellaneous" />
     </group>
 
