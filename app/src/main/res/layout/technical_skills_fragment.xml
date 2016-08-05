@@ -14,7 +14,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/skill_tab_layout"
             android:layout_gravity="center_horizontal"
-            app:tabMode="scrollable"/>
+            app:tabMode="scrollable"
+            android:background="@color/colorNormal"
+            app:tabTextColor="@color/colorDarkest"
+            app:tabSelectedTextColor="@color/colorToolbar"/>
 
     </android.support.design.widget.AppBarLayout>
 

@@ -4,5 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorBlack">#10160a</color>
-    <color name="colorToolbar">#dc97f9</color>
+    <color name="colorToolbar">#4a306d</color>
+    <color name="colorDarkest">#0e273c</color>
+    <color name="colorDarker">#4a306d</color>
+    <color name="colorNormal">#a167a5</color>
+    <color name="colorLighter">#d3bccc</color>
+    <color name="colorLightest">#e8d7f1</color>
 </resources>

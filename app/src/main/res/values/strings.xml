@@ -39,6 +39,7 @@
 
     <string name="misc_social_work">Social Work</string>
     <string name="misc_pos_responsibilty">Positions of responsibility</string>
+    <string name="misc_education">Education</string>
 
     <string name="skill_title_android"> Android </string>
     <string name="skill_title_algorithm"> Algorithm </string>

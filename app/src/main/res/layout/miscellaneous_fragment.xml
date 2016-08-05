@@ -8,6 +8,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="@dimen/margin"
+        android:text="@string/misc_education"
+        android:textAllCaps="false"
+        android:textSize="@dimen/medium_text_size"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin"
         android:text="@string/misc_social_work"
         android:textAllCaps="false"
         android:textSize="@dimen/medium_text_size"/>

@@ -12,7 +12,10 @@
         <android.support.design.widget.TabLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/course_tab_layout"/>
+            android:id="@+id/course_tab_layout"
+            android:background="@color/colorNormal"
+            app:tabTextColor="@color/colorDarkest"
+            app:tabSelectedTextColor="@color/colorToolbar"/>
 
     </android.support.design.widget.AppBarLayout>
 

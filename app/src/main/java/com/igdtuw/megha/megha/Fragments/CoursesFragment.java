@@ -89,11 +89,10 @@ public class CoursesFragment extends Fragment {
             else if(section_num == 2){
                 view = inflater.inflate(R.layout.graduate_course_fragment, container, false);
                 RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.graduate_course_recycler_view);
-                String [] name={"Androidwarriors", "Stackoverflow", "Developer Android", "AndroidHive",
-                        "Slidenerd","TheNewBoston","Truiton","HmkCode","JavaTpoint","Javapeper"};
+                String [] name={"C/C++", "DS & Algorithms", "Database Management System", "Operating Systems",
+                        "Software Engineering"};
 
-                String [] subText={"aaaaaaaaaaaaa", "bbbbbbbbbb", "cccccccc", "eeeeeeeee",
-                        "fffffff", "ggggggggg", "hhhhhhhhhh", "iiiiiiiii", "jjjjjjjj", "kkkkkkk"};
+                String [] subText={"1st semester", "4th semester", "3rd semester", "4th semester", "4th semester"};
 
                 CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), name, subText);
                 recyclerView.setAdapter(adapter);
@@ -103,11 +102,9 @@ public class CoursesFragment extends Fragment {
             else{
                 view = inflater.inflate(R.layout.exteranal_classroom_course_fragment, container, false);
                 RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.external_course_recycler_view);
-                String [] name={"Androidwarriors", "Stackoverflow", "Developer Android", "AndroidHive",
-                        "Slidenerd","TheNewBoston","Truiton","HmkCode","JavaTpoint","Javapeper"};
+                String [] name={"Crux- Java", "Pandora- Android App Development", "Ethical Hacking"};
 
-                String [] subText={"aaaaaaaaaaaaa", "bbbbbbbbbb", "cccccccc", "eeeeeeeee",
-                        "fffffff", "ggggggggg", "hhhhhhhhhh", "iiiiiiiii", "jjjjjjjj", "kkkkkkk"};
+                String [] subText={"Coding Blocks", "Coding Blocks", "I3indya Technologies"};
 
                 CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), name, subText);
                 recyclerView.setAdapter(adapter);
