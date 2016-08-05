@@ -6,6 +6,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toolbar;
 
 import com.igdtuw.megha.megha.Adapters.CourseAdapter;
+import com.igdtuw.megha.megha.Adapters.CourseRecyclerAdapter;
 import com.igdtuw.megha.megha.R;
 
 /**
@@ -73,18 +76,43 @@ public class CoursesFragment extends Fragment {
             View view;
             if(section_num == 1){
                 view = inflater.inflate(R.layout.online_course_fragment, container, false);
-                TextView textView = (TextView) view.findViewById(R.id.section_label_online_course);
-                textView.setText("online courses");
+                RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.online_course_recycler_view);
+                String name[] = {"Html & CSS", "PHP", "Javascript", " LFS101x.2 Introduction to Linux", "Algorithms: Design and Analysis"};
+
+                String subText[] = {"Codecademy", "Codecademy", "Codecademy", "edX", "Coursera"};
+
+                CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), name, subText);
+                recyclerView.setAdapter(adapter);
+                recyclerView.setHasFixedSize(true);
+                recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
             }
             else if(section_num == 2){
                 view = inflater.inflate(R.layout.graduate_course_fragment, container, false);
-                TextView textView = (TextView) view.findViewById(R.id.section_label_graduate_course);
-                textView.setText("graduate courses");
+                RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.graduate_course_recycler_view);
+                String [] name={"Androidwarriors", "Stackoverflow", "Developer Android", "AndroidHive",
+                        "Slidenerd","TheNewBoston","Truiton","HmkCode","JavaTpoint","Javapeper"};
+
+                String [] subText={"aaaaaaaaaaaaa", "bbbbbbbbbb", "cccccccc", "eeeeeeeee",
+                        "fffffff", "ggggggggg", "hhhhhhhhhh", "iiiiiiiii", "jjjjjjjj", "kkkkkkk"};
+
+                CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), name, subText);
+                recyclerView.setAdapter(adapter);
+                recyclerView.setHasFixedSize(true);
+                recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
             }
             else{
                 view = inflater.inflate(R.layout.exteranal_classroom_course_fragment, container, false);
-                TextView textView = (TextView) view.findViewById(R.id.section_label_external_class_course);
-                textView.setText("external courses");
+                RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.external_course_recycler_view);
+                String [] name={"Androidwarriors", "Stackoverflow", "Developer Android", "AndroidHive",
+                        "Slidenerd","TheNewBoston","Truiton","HmkCode","JavaTpoint","Javapeper"};
+
+                String [] subText={"aaaaaaaaaaaaa", "bbbbbbbbbb", "cccccccc", "eeeeeeeee",
+                        "fffffff", "ggggggggg", "hhhhhhhhhh", "iiiiiiiii", "jjjjjjjj", "kkkkkkk"};
+
+                CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), name, subText);
+                recyclerView.setAdapter(adapter);
+                recyclerView.setHasFixedSize(true);
+                recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
             }
             return view;
         }
