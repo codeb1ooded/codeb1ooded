@@ -11,6 +11,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/skill_title_phpnxampp"
+            android:textColor="@color/colorLightest"
             android:textSize="@dimen/big_text_size"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/margin"/>
@@ -26,6 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/skill_sub_title_phpnxampp"
+            android:textColor="@color/colorLightest"
             android:textSize="@dimen/medium_text_size"
             android:layout_gravity="center"
             android:textAlignment="center"
@@ -38,6 +40,7 @@
             android:textSize="@dimen/small_text_size"
             android:layout_gravity="center"
             android:textAlignment="center"
+            android:textColor="@color/colorLightest"
             android:layout_marginBottom="@dimen/margin"/>
 
     </LinearLayout>

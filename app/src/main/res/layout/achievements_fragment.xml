@@ -2,13 +2,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorDarkest">
 
-    <android.support.v4.view.ViewPager
+    <com.igdtuw.megha.megha.CustomLayout.AutoSwitchViewPager
         android:id="@+id/containerAchievementsFragment"
         android:layout_margin="@dimen/margin"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:textColor="@color/colorLightest"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </android.support.design.widget.CoordinatorLayout>

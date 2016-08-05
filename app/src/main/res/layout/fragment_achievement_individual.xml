@@ -13,6 +13,7 @@
             android:textAlignment="center"
             android:id="@+id/individualAchivementTitle"
             android:textSize="@dimen/big_text_size"
+            android:textColor="@color/colorLightest"
             android:layout_margin="@dimen/margin"/>
 
         <TextView
@@ -21,6 +22,7 @@
             android:textAlignment="center"
             android:id="@+id/individualAchivementText"
             android:textSize="@dimen/medium_text_size"
+            android:textColor="@color/colorLightest"
             android:layout_margin="@dimen/margin"/>
 
         <TextView
@@ -29,6 +31,7 @@
             android:textAlignment="center"
             android:id="@+id/individualAchivementOrganizer"
             android:textSize="@dimen/medium_text_size"
+            android:textColor="@color/colorLightest"
             android:layout_margin="@dimen/margin"/>
     </LinearLayout>
 

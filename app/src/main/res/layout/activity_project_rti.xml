@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkest">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -17,10 +18,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
+                android:textColor="@color/colorLightest"
                 android:textSize="@dimen/big_text_size"
                 android:text="@string/project_rti"
                 android:layout_margin="@dimen/margin"/>
-            <android.support.v4.view.ViewPager
+            <com.igdtuw.megha.megha.CustomLayout.AutoSwitchViewPager
                 android:id="@+id/containerProjectRTIFragment"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
@@ -29,12 +31,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin"
+                android:textColor="@color/colorLightest"
                 android:textSize="@dimen/small_text_size"
                 android:textAlignment="center"
                 android:text="@string/project_description_rtims"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorLightest"
                 android:layout_margin="@dimen/margin"
                 android:textSize="@dimen/small_text_size"
                 android:textAlignment="center"

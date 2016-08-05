@@ -14,6 +14,9 @@ import android.widget.TextView;
 import com.igdtuw.megha.megha.Adapters.AchievementAdapter;
 import com.igdtuw.megha.megha.R;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 /**
  * Created by megha on 10/7/16.
  */
@@ -21,6 +24,7 @@ public class AchievementsFragment extends Fragment {
 
     ViewPager achievementsViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
+    Timer timer;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -28,6 +32,24 @@ public class AchievementsFragment extends Fragment {
         fragmentStatePagerAdapter = new AchievementAdapter(getActivity(), getChildFragmentManager());
         achievementsViewPager = (ViewPager) view.findViewById(R.id.containerAchievementsFragment);
         achievementsViewPager.setAdapter(fragmentStatePagerAdapter);
+        /*timer = new Timer();
+        achievementsViewPager.setCurrentItem(0);
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (count <= alQuestion.size()) {
+                            viewPager.setCurrentItem(count, true);
+                            count++;
+                        } else {
+                            viewPager.setCurrentItem(count);
+                        }
+                    }
+                });
+            }
+        }, 500, 3000);*/
         return view;
     }
 

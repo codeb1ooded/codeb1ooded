@@ -2,13 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/colorDarkest">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
         android:textSize="@dimen/medium_text_size"
+        android:background="@color/colorDarker"
+        android:textColor="@color/colorLightest"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="@dimen/margin"
         android:text="@string/contact_github"
         android:textAlignment="center"
         android:onClick="contactGithub"/>
@@ -17,6 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
         android:textSize="@dimen/medium_text_size"
+        android:background="@color/colorDarker"
+        android:textColor="@color/colorLightest"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="@dimen/margin"
         android:text="@string/contact_linkedin"
         android:textAlignment="center"
         android:onClick="contactLinkedin"/>
@@ -26,6 +35,10 @@
         android:layout_margin="@dimen/margin"
         android:textSize="@dimen/medium_text_size"
         android:text="@string/contact_facebook"
+        android:background="@color/colorDarker"
+        android:textColor="@color/colorLightest"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="@dimen/margin"
         android:textAlignment="center"
         android:onClick="contactFacebook"/>
     <Button
@@ -34,6 +47,10 @@
         android:layout_margin="@dimen/margin"
         android:textSize="@dimen/medium_text_size"
         android:text="@string/contact_google"
+        android:background="@color/colorDarker"
+        android:textColor="@color/colorLightest"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="@dimen/margin"
         android:textAlignment="center"
         android:onClick="contactGoogle"/>
     <Button
@@ -41,7 +58,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
         android:textSize="@dimen/medium_text_size"
+        android:padding="@dimen/margin"
         android:text="@string/contact_twitter"
+        android:background="@color/colorDarker"
+        android:textColor="@color/colorLightest"
+        android:fontFamily="sans-serif-condensed"
         android:textAlignment="center"
         android:onClick="contactTwitter"/>
 

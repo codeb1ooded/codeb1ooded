@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkest">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -18,9 +19,10 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="@dimen/big_text_size"
+                android:textColor="@color/colorLightest"
                 android:text="@string/project_scientific_calculator"
                 android:layout_margin="@dimen/margin"/>
-            <android.support.v4.view.ViewPager
+            <com.igdtuw.megha.megha.CustomLayout.AutoSwitchViewPager
                 android:id="@+id/containerProjectCalculatorFragment"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
@@ -30,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin"
                 android:textSize="@dimen/small_text_size"
+                android:textColor="@color/colorLightest"
                 android:textAlignment="center"
                 android:text="@string/project_description_calculator"/>
             <TextView
@@ -38,6 +41,7 @@
                 android:layout_margin="@dimen/margin"
                 android:textSize="@dimen/small_text_size"
                 android:textAlignment="center"
+                android:textColor="@color/colorLightest"
                 android:text="@string/project_tech_used_calculator"/>
         </LinearLayout>
     </android.support.design.widget.CoordinatorLayout>
