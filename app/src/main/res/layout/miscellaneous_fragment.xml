@@ -16,7 +16,8 @@
         android:fontFamily="sans-serif-condensed"
         android:padding="@dimen/margin"
         android:textAllCaps="false"
-        android:textSize="@dimen/medium_text_size"/>
+        android:textSize="@dimen/medium_text_size"
+        android:onClick="miscellaneousEducation"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -29,7 +30,8 @@
         android:fontFamily="sans-serif-condensed"
         android:padding="@dimen/margin"
         android:textAllCaps="false"
-        android:textSize="@dimen/medium_text_size"/>
+        android:textSize="@dimen/medium_text_size"
+        android:onClick="miscellaneousSocialWork"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,6 +43,7 @@
         android:fontFamily="sans-serif-condensed"
         android:padding="@dimen/margin"
         android:textAllCaps="false"
-        android:textSize="@dimen/medium_text_size"/>
+        android:textSize="@dimen/medium_text_size"
+        android:onClick="miscellaneousPositionofResponsibility"/>
 
 </LinearLayout>

@@ -13,6 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.igdtuw.megha.megha.Activities.Project.Eventley;
+import com.igdtuw.megha.megha.Activities.Project.Miscellaneous.EducationActivity;
+import com.igdtuw.megha.megha.Activities.Project.Miscellaneous.PositionsofResponsibilityActivity;
+import com.igdtuw.megha.megha.Activities.Project.Miscellaneous.SocialWorkActivity;
 import com.igdtuw.megha.megha.Activities.Project.MoviePlate;
 import com.igdtuw.megha.megha.Activities.Project.OthelloBoardGame;
 import com.igdtuw.megha.megha.Activities.Project.RTIManagementSystem;
@@ -24,6 +27,8 @@ import com.igdtuw.megha.megha.Fragments.CoursesFragment;
 import com.igdtuw.megha.megha.Fragments.MiscellaneousFragment;
 import com.igdtuw.megha.megha.Fragments.ProjectsFragment;
 import com.igdtuw.megha.megha.Fragments.TechnicalSkillsFragment;
+
+import java.net.MalformedURLException;
 
 public class AboutMeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -70,6 +75,11 @@ public class AboutMeActivity extends AppCompatActivity
         } else if (id == R.id.nav_projects) {
             ProjectsFragment fragment = new ProjectsFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
+        } else if (id == R.id.nav_resume) {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_VIEW);
+            i.setData(Uri.parse("http://megha-code.github.io/resume_pdf.pdf"));
+            startActivity(i);
         } else if (id == R.id.nav_technical_skills) {
             TechnicalSkillsFragment fragment = new TechnicalSkillsFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
@@ -117,6 +127,25 @@ public class AboutMeActivity extends AppCompatActivity
         i.setClass(AboutMeActivity.this, ScientficCalculator.class);
         startActivity(i);
     }
+
+
+    public void miscellaneousEducation(View v){
+        Intent i = new Intent();
+        i.setClass(AboutMeActivity.this, EducationActivity.class);
+        startActivity(i);
+    }
+    public void miscellaneousSocialWork(View v){
+        Intent i = new Intent();
+        i.setClass(AboutMeActivity.this, SocialWorkActivity.class);
+        startActivity(i);
+    }
+    public void miscellaneousPositionofResponsibility(View v){
+        Intent i = new Intent();
+        i.setClass(AboutMeActivity.this, PositionsofResponsibilityActivity.class);
+        startActivity(i);
+    }
+
+
     public void contactGithub(View v){
         String url = "https://github.com/megha-code";
         Intent i = new Intent(Intent.ACTION_VIEW);
