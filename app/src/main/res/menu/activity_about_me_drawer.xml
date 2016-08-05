@@ -7,6 +7,10 @@
             android:icon="@drawable/ic_about_me"
             android:title="About me" />
         <item
+            android:id="@+id/nav_achievements"
+            android:icon="@drawable/ic_achievements"
+            android:title="Achievements" />
+        <item
             android:id="@+id/nav_projects"
             android:icon="@drawable/ic_projects"
             android:title="Projects" />
@@ -19,17 +23,9 @@
             android:icon="@drawable/ic_courses"
             android:title="Courses" />
         <item
-            android:id="@+id/nav_achievements"
-            android:icon="@drawable/ic_achievements"
-            android:title="Achievements" />
-        <item
             android:id="@+id/nav_contact_details"
             android:icon="@drawable/ic_contact_me"
             android:title="Contact Details" />
-        <item
-            android:id="@+id/nav_special_credits"
-            android:icon="@drawable/ic_credits"
-            android:title="Special Credits" />
         <item
             android:id="@+id/nav_miscellaneous"
             android:icon="@drawable/ic_miscellaneous"
