@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.igdtuw.megha.megha.Adapters.AchievementAdapter;
 import com.igdtuw.megha.megha.R;
+import com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -24,32 +25,31 @@ public class AchievementsFragment extends Fragment {
 
     ViewPager achievementsViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
-    Timer timer;
+    DotIndicator indicator;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.achievements_fragment, container, false);
         fragmentStatePagerAdapter = new AchievementAdapter(getActivity(), getChildFragmentManager());
+        indicator = (DotIndicator) view.findViewById(R.id.bulletIndicator);
         achievementsViewPager = (ViewPager) view.findViewById(R.id.containerAchievementsFragment);
         achievementsViewPager.setAdapter(fragmentStatePagerAdapter);
-        /*timer = new Timer();
-        achievementsViewPager.setCurrentItem(0);
-        timer.schedule(new TimerTask() {
+        achievementsViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
-            public void run() {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (count <= alQuestion.size()) {
-                            viewPager.setCurrentItem(count, true);
-                            count++;
-                        } else {
-                            viewPager.setCurrentItem(count);
-                        }
-                    }
-                });
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
             }
-        }, 500, 3000);*/
+
+            @Override
+            public void onPageSelected(int position) {
+                indicator.setSelectedItem(position, true);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
         return view;
     }
 

@@ -10,8 +10,17 @@
         android:id="@+id/containerAchievementsFragment"
         android:layout_margin="@dimen/margin"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
         android:textColor="@color/colorLightest"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bulletIndicator"
+        app:numberOfDots='4'
+        app:selectedDotIndex='0'
+        android:layout_marginTop="400dp"
+        android:layout_gravity="center"/>
 
 </android.support.design.widget.CoordinatorLayout>
