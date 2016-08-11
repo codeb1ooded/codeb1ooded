@@ -56,10 +56,8 @@ public class OthelloBoardGame extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.project_othello2);
             else if(section_num == 3)
                 imageView.setImageResource(R.drawable.project_othello3);
-            else if(section_num == 4)
-                imageView.setImageResource(R.drawable.project_othello4);
             else
-                imageView.setImageResource(R.drawable.project_othello5);
+                imageView.setImageResource(R.drawable.project_othello4);
             return view;
         }
     }

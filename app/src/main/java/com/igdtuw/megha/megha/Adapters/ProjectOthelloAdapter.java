@@ -14,7 +14,7 @@ public class ProjectOthelloAdapter extends FragmentStatePagerAdapter {
     private int numofScreens;
     public ProjectOthelloAdapter(FragmentManager fm) {
         super(fm);
-        numofScreens = 5;
+        numofScreens = 4;
     }
 
     @Override
