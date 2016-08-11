@@ -10,8 +10,10 @@ import com.igdtuw.megha.megha.Activities.Project.ScientficCalculator;
  * Created by megha on 28/7/16.
  */
 public class ProjectCalculatorAdapter extends FragmentStatePagerAdapter {
+    private int numofScreens;
     public ProjectCalculatorAdapter(FragmentManager fm) {
         super(fm);
+        numofScreens = 7;
     }
 
     @Override
@@ -21,6 +23,6 @@ public class ProjectCalculatorAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return numofScreens;
     }
 }

@@ -51,6 +51,20 @@ public class ScientficCalculator extends AppCompatActivity {
             int section_num = getArguments().getInt(ARG_SECTION_NUMBER);
             View view = inflater.inflate(R.layout.image_view_project_all, container, false);
             ImageView imageView = (ImageView) view.findViewById(R.id.imageViewProject);
+            if(section_num == 1)
+                imageView.setImageResource(R.drawable.project_calc1);
+            else if(section_num == 2)
+                imageView.setImageResource(R.drawable.project_calc2);
+            else if(section_num == 3)
+                imageView.setImageResource(R.drawable.project_calc3);
+            else if(section_num == 4)
+                imageView.setImageResource(R.drawable.project_calc4);
+            else if(section_num == 5)
+                imageView.setImageResource(R.drawable.project_calc5);
+            else if(section_num == 6)
+                imageView.setImageResource(R.drawable.project_calc6);
+            else
+                imageView.setImageResource(R.drawable.project_calc7);
             return view;
         }
     }
