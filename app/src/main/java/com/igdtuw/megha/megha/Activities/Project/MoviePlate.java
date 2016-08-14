@@ -51,6 +51,28 @@ public class MoviePlate extends AppCompatActivity {
             int section_num = getArguments().getInt(ARG_SECTION_NUMBER);
             View view = inflater.inflate(R.layout.image_view_project_all, container, false);
             ImageView imageView = (ImageView) view.findViewById(R.id.imageViewProject);
+            if(section_num == 1)
+                imageView.setImageResource(R.drawable.project_movieplate1);
+            else if(section_num == 2)
+                imageView.setImageResource(R.drawable.project_movieplate2);
+            else if(section_num == 3)
+                imageView.setImageResource(R.drawable.project_movieplate3);
+            else if(section_num == 4)
+                imageView.setImageResource(R.drawable.project_movieplate4);
+            else if(section_num == 5)
+                imageView.setImageResource(R.drawable.project_movieplate5);
+            else if(section_num == 6)
+                imageView.setImageResource(R.drawable.project_movieplate6);
+            else if(section_num == 7)
+                imageView.setImageResource(R.drawable.project_movieplate7);
+            else if(section_num == 8)
+                imageView.setImageResource(R.drawable.project_movieplate8);
+            else if(section_num == 9)
+                imageView.setImageResource(R.drawable.project_movieplate9);
+            else if(section_num == 10)
+                imageView.setImageResource(R.drawable.project_movieplate10);
+            else
+                imageView.setImageResource(R.drawable.project_movieplate11);
             return view;
         }
     }

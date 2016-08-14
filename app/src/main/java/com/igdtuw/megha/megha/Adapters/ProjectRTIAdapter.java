@@ -14,7 +14,7 @@ public class ProjectRTIAdapter extends FragmentStatePagerAdapter {
     private int numofScreens;
     public ProjectRTIAdapter(FragmentManager fm) {
         super(fm);
-        numofScreens = 0;
+        numofScreens = 6;
     }
 
     @Override
