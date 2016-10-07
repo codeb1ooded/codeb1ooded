@@ -31,6 +31,21 @@ public class Eventley extends AppCompatActivity {
         projectViewPager = (ViewPager) findViewById(R.id.containerProjectEventleyFragment);
         projectViewPager.setAdapter(fragmentStatePagerAdapter);
     }
+
+    public void showDemo(View v){
+        String url = "put correct url";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    public void showGithub(View v){
+        String url = "https://github.com/megha-code/OSM-EventGrade";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
     public static class ProjectIndividualFragment extends Fragment {
 
         public static final String ARG_SECTION_NUMBER = "section_number";
@@ -44,20 +59,6 @@ public class Eventley extends AppCompatActivity {
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
             return fragment;
-        }
-
-        public void showDemo(View v){
-            String url = "put correct url";
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse(url));
-            startActivity(i);
-        }
-
-        public void showGithub(View v){
-            String url = "https://github.com/megha-code/OSM-EventGrade";
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse(url));
-            startActivity(i);
         }
 
         @Nullable

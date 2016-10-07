@@ -17,7 +17,7 @@ public class AchievementAdapter extends FragmentStatePagerAdapter {
     public AchievementAdapter(Context context, FragmentManager fm) {
         super(fm);
         this.context = context;
-        numofScreens = 4;
+        numofScreens = 6;
     }
 
     @Override
@@ -38,6 +38,10 @@ public class AchievementAdapter extends FragmentStatePagerAdapter {
             return  "CodeDiva";
         else if(position == 2)
             return  "Cryptocodz";
+        else if(position == 3)
+            return  "Bugwars";
+        else if(position == 4)
+            return  "Code and Counter";
         return  "Mass Awareness Campaign";
     }
 }

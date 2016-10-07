@@ -15,6 +15,10 @@
             android:icon="@drawable/ic_achievements"
             android:title="Achievements" />
         <item
+            android:id="@+id/nav_work_experience"
+            android:icon="@drawable/ic_work_experience"
+            android:title="Work Experience" />
+        <item
             android:id="@+id/nav_projects"
             android:icon="@drawable/ic_projects"
             android:title="Projects" />

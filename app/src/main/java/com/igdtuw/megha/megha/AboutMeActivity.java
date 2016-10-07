@@ -95,6 +95,8 @@ public class AboutMeActivity extends AppCompatActivity
         } else if (id == R.id.nav_miscellaneous) {
             MiscellaneousFragment fragment = new MiscellaneousFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
+        } else if (id == R.id.nav_work_experience) {
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -91,6 +91,16 @@ public class AchievementsFragment extends Fragment {
                 textView.setText("Secured first position in Cryptocodz-14 and second position in Cryptocodz-13, held under Annual Cyber Celebration, Technowiz by Vivekanand Schhol");
                 lastTextView.setText("-Vivekanand School");
             }
+            else if(section_num == 4) {
+                titleTextView.setText("Bugwars");
+                textView.setText("Secured third rank in Bugwars with team, organised by IEEE IGDTUW Student Chapter");
+                lastTextView.setText("-IGDTUW");
+            }
+            else if(section_num == 5) {
+                titleTextView.setText("Code and Counter");
+                textView.setText("Secured 19th rank in Code and Counter organised by Nagarro and Coding Blocks");
+                lastTextView.setText("-Nagarro");
+            }
             else {
                 titleTextView.setText("Mass Awareness Campaign");
                 textView.setText("Certificate of Special Effort and Silver Medal by Care Promise Welfare Society for participating as volunteer in Mass Awareness Campaign against Cancer/ Hepatitis-B");
