@@ -1,5 +1,7 @@
 package com.igdtuw.megha.megha.Activities.Project;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -29,6 +31,20 @@ public class RTIManagementSystem extends AppCompatActivity{
         fragmentStatePagerAdapter = new ProjectRTIAdapter(getSupportFragmentManager());
         projectViewPager = (ViewPager) findViewById(R.id.containerProjectRTIFragment);
         projectViewPager.setAdapter(fragmentStatePagerAdapter);
+    }
+
+    public void showDemo(View v){
+        String url = "http://rti_igdtuw.site88.net";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    public void showGithub(View v){
+        String url = "https://github.com/megha-code/BMSU";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 
     public static class ProjectIndividualFragment extends Fragment {

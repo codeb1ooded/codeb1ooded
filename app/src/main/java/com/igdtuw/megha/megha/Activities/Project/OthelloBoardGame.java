@@ -1,5 +1,7 @@
 package com.igdtuw.megha.megha.Activities.Project;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -29,6 +31,21 @@ public class OthelloBoardGame extends AppCompatActivity {
         projectViewPager = (ViewPager) findViewById(R.id.containerProjectOthelloFragment);
         projectViewPager.setAdapter(fragmentStatePagerAdapter);
     }
+
+    public void showDemo(View v){
+        String url = "put correct url";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    public void showGithub(View v){
+        String url = "https://github.com/megha-code/Othello";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
     public static class ProjectIndividualFragment extends Fragment {
 
         public static final String ARG_SECTION_NUMBER = "section_number";

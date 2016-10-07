@@ -10,6 +10,7 @@
 
     <dimen name="big_text_size">40dp</dimen>
     <dimen name="medium_text_size">30dp</dimen>
+    <dimen name="less_small_text_size">25dp</dimen>
     <dimen name="small_text_size">20dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
 

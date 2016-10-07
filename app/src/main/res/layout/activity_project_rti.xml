@@ -43,6 +43,34 @@
                 android:textSize="@dimen/small_text_size"
                 android:textAlignment="center"
                 android:text="@string/project_tech_used_rtims"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_demo"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorLightest"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textSize="@dimen/less_small_text_size"
+                android:onClick="showDemo"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_code"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorLightest"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textSize="@dimen/less_small_text_size"
+                android:onClick="showGithub" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightest"
+                android:layout_margin="@dimen/margin"
+                android:textSize="@dimen/small_text_size"
+                android:textAlignment="center"
+                android:text="@string/developer_rti"/>
         </LinearLayout>
     </android.support.design.widget.CoordinatorLayout>
 </ScrollView>

@@ -9,6 +9,9 @@
     <string name="my_title">It\'s not about what you want it\'s about how hard you want it</string>
     <string name="short_desc">I am currently pursuing my Bachelors in Technology in Computer Science from IGDTUW. I love to code and see how it can changed the world in a way we can\'t event think of. Android App Development, Algorithms, and Operating Systems fascinates me.</string>
     <string name="my_github_username">megha-code</string>
+    <string name="view_code"> View code on github </string>
+    <string name="view_demo"> View demo </string>
+    <string name="get_apk"> Get the apk link </string>
 
     <string name="project_rti">RTI Management System</string>
     <string name="project_movieplate">MoviePlate</string>
@@ -82,7 +85,7 @@
     <string name="project_description_eventley">Whenever, you want to utilize your weekend in some great and enjoying holiday, you would most probably found yourselves confused of where to spend that time to make most of it. Or when you visit a new place and have no idea of main attractions of place, then what to do? That\'s where, Eventley came to rescue. Eventley help you to find popular and relevant(weather on day is fine) events near you on basis of your choice of category (like education, sports, culture, entertainment, etc.) by analyzing events based on number of likes, number of comments, number of images , weather at time of event, etc.</string>
     <string name="project_description_calculator">An android app which not only includes basic mathematics or some scientfic  functions, but also, conversion of number system</string>
     <string name="project_description_movieplate">It is an android app to let you browse popular, rated and now playing movies and TV shows. Also it allows you to add TV shows or movies to your watchlist and see your watchlist. This app is built using MovieDB and OMDB apis. This is a proptotype but we are working on many more features.</string>
-    <string name="project_description_rtims">Project focuses on automating the process of RTI management in government institutions. It keeps track of each peice of information related to RTI from its submission till it is closed and even after that by storing data into database for further access.</string>
+    <string name="project_description_rtims">RTI management in government institutions is pen and paper based. Due to this it creates lot of issues like mismanagement, diffulty in analysis &amp; report generateion, redundancy, storage problems, etc. This project focuses on automating this RTI system in government institutions to get rid of most of the problems caused by pen and paper based system..</string>
 
     <string name="project_tech_used_othello"><b>Technologies Used</b> \n Java and its GUI and other libraries (swing, awt, arraylist, etc.)</string>
     <string name="project_tech_used_eventley"><b>Technologies Used</b> \n Frontend Development: HTML, CSS, JS \n Backend Development: Python and Django \n APIs: Eventful api, Google Maps, Open whether api, Plotly for visualization</string>
@@ -90,4 +93,9 @@
     <string name="project_tech_used_movieplate"><b>Technologies Used</b> \n Java, XML, APIs, Android libraries(Retrofit, GSON, Picasso, etc.), MySQL Database </string>
     <string name="project_tech_used_rtims"><b>Technologies Used</b> \n Frontend Development: HTML, CSS, Bootstrap, JS \n Backend Development: PHP \n Database Storage: XAMPP, MySQL Database </string>
 
+    <string name="developer_othello"><b> Developer </b> \n Megha Aggarwal </string>
+    <string name="developer_eventley"><b> Developers </b> \n Aishwarya Sharma, Ankita Jain, Megha Aggarwal, Nitika Jain, Saloni Bhatia</string>
+    <string name="developer_calculator"><b> Developer </b> \n Megha Aggarwal </string>
+    <string name="developer_movieplate"><b> Developers </b> \n Himanshu Singhal, Manisha Poddar, Megha Aggarwal, Sachin Aggarwal </string>
+    <string name="developer_rti"><b> Developers </b> \n Bhavya Garg, Megha Aggarwal, Saloni Bhatia, Utkarsha Goswami</string>
 </resources>
