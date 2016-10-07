@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bulletIndicator"
-        app:numberOfDots='4'
+        app:numberOfDots='6'
         app:selectedDotIndex='0'
         android:layout_marginTop="400dp"
         android:layout_gravity="center"/>
