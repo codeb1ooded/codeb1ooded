@@ -98,7 +98,7 @@ public class AchievementsFragment extends Fragment {
             }
             else if(section_num == 5) {
                 titleTextView.setText("Code and Counter");
-                textView.setText("Secured 19th rank in Code and Counter organised by Nagarro and Coding Blocks");
+                textView.setText("Secured 19th rank with team in Code and Counter organised by Nagarro and Coding Blocks at HackerEarth platform");
                 lastTextView.setText("-Nagarro");
             }
             else {

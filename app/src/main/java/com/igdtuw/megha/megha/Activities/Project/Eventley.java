@@ -40,7 +40,7 @@ public class Eventley extends AppCompatActivity {
     }
 
     public void showGithub(View v){
-        String url = "https://github.com/megha-code/OSM-EventGrade";
+        String url = "https://github.com/codeb1ooded/OSM-EventGrade";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);

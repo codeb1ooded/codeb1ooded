@@ -40,7 +40,7 @@ public class ScientficCalculator extends AppCompatActivity {
     }
 
     public void showGithub(View v){
-        String url = "https://github.com/megha-code/Calculator";
+        String url = "https://github.com/codeb1ooded/Calculator";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
