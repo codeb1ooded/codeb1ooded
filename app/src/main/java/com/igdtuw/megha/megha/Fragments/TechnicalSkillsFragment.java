@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.ToxicBakery.viewpager.transforms.CubeOutTransformer;
+import com.ToxicBakery.viewpager.transforms.RotateUpTransformer;
 import com.igdtuw.megha.megha.Adapters.SkillsAdapter;
 import com.igdtuw.megha.megha.R;
 
@@ -27,6 +29,7 @@ public class TechnicalSkillsFragment extends Fragment {
         View view = inflater.inflate(R.layout.technical_skills_fragment, container, false);
         TabLayout tabLayout = (TabLayout) view.findViewById(R.id.skill_tab_layout);
         fragmentStatePagerAdapter = new SkillsAdapter(getActivity(), getChildFragmentManager());
+
         skillsViewPager = (ViewPager) view.findViewById(R.id.containerSkillsFragment);
         skillsViewPager.setAdapter(fragmentStatePagerAdapter);
         tabLayout.setupWithViewPager(skillsViewPager);
@@ -42,6 +45,16 @@ public class TechnicalSkillsFragment extends Fragment {
             @Override
             public void onTabReselected(TabLayout.Tab tab) {}
         });
+        skillsViewPager.setPageTransformer(true, new RotateUpTransformer());
+        TransformerItem transformerItem = new TransformerItem(CubeOutTransformer.class);
+        try {
+            skillsViewPager.setPageTransformer(true, transformerItem.clazz.newInstance());
+        } catch (java.lang.InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
         return view;
     }
 
@@ -89,5 +102,22 @@ public class TechnicalSkillsFragment extends Fragment {
                 view = inflater.inflate(R.layout.fragment_skills_htmlcssjs, container, false);
             return view;
         }
+    }
+
+    private static final class TransformerItem {
+
+        final String title;
+        final Class<? extends ViewPager.PageTransformer> clazz;
+
+        public TransformerItem(Class<? extends ViewPager.PageTransformer> clazz) {
+            this.clazz = clazz;
+            title = clazz.getSimpleName();
+        }
+
+        @Override
+        public String toString() {
+            return title;
+        }
+
     }
 }
