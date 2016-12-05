@@ -25,12 +25,9 @@ import com.igdtuw.megha.megha.Fragments.AboutMeFragment;
 import com.igdtuw.megha.megha.Fragments.AchievementsFragment;
 import com.igdtuw.megha.megha.Fragments.ContactDetailsFragment;
 import com.igdtuw.megha.megha.Fragments.CoursesFragment;
-import com.igdtuw.megha.megha.Fragments.FragmentAbout;
 import com.igdtuw.megha.megha.Fragments.MiscellaneousFragment;
 import com.igdtuw.megha.megha.Fragments.ProjectsFragment;
 import com.igdtuw.megha.megha.Fragments.TechnicalSkillsFragment;
-
-import java.net.MalformedURLException;
 
 public class AboutMeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -53,7 +50,7 @@ public class AboutMeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        FragmentAbout aboutMeFragment = new FragmentAbout();
+        AboutMeFragment aboutMeFragment = new AboutMeFragment();
         currentFragment = aboutMeFragment;
         getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, aboutMeFragment).commit();
     }
@@ -84,7 +81,7 @@ public class AboutMeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_about_me) {
-            FragmentAbout fragment = new FragmentAbout();
+            AboutMeFragment fragment = new AboutMeFragment();
             currentFragment = fragment;
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_projects) {

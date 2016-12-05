@@ -8,10 +8,20 @@
     <string name="my_name">Megha Aggarwal</string>
     <string name="my_title">It\'s not about what you want it\'s about how hard you want it</string>
     <string name="short_desc">I am currently pursuing my Bachelors in Technology in Computer Science from IGDTUW. I love to code and see how it can changed the world in a way we can\'t event think of. Android App Development, Algorithms, and Operating Systems fascinates me.</string>
-    <string name="my_github_username">megha-code</string>
+    <string name="my_github_username">codeb1ooded</string>
     <string name="view_code"> View code on github </string>
     <string name="view_demo"> View demo </string>
     <string name="get_apk"> Get the apk link </string>
+    <string name="github_link">http://codeb1ooded.github.io/</string>
+    <string name="email_id">meghaaggarwal493@gmail.com</string>
+
+    <string name="cv_text">CV</string>
+    <string name="android_developer">4 android developer</string>
+    <string name="sophomore_text">Full time sophomore at IGDTUW</string>
+    <string name="project_text">Projects</string>
+    <string name="for_more_text">For more</string>
+    <string name="tell_blog">Blog: codeb1ooded.github.io</string>
+    <string name="tell_github">Github: github.com/codeb1ooded</string>
 
     <string name="project_rti">RTI Management System</string>
     <string name="project_movieplate">MoviePlate</string>

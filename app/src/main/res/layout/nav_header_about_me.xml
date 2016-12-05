@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Megha Aggarwal"
+        android:text="@string/my_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16dp"
         android:textStyle="bold"/>
@@ -31,14 +31,14 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="meghaaggarwal493@gmail.com"
+        android:text="@string/email_id"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewPortfolio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="http://megha-code.github.io/"
+        android:text="@string/github_link"
         android:textStyle="bold" />
 
 </LinearLayout>
