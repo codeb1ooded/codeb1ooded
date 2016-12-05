@@ -32,4 +32,5 @@ dependencies {
     compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
     compile 'com.nightonke:wowoviewpager:1.0.2'
     compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.medyo:fancybuttons:1.8.2'
 }

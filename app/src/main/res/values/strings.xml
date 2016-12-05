@@ -40,11 +40,11 @@
     <string name="courses_graduate">Graduate</string>
     <string name="courses_outside">External Classrooms</string>
 
-    <string name="contact_github">Github</string>
-    <string name="contact_linkedin">Linked In</string>
-    <string name="contact_facebook">Facebook</string>
-    <string name="contact_google">Google Plus</string>
-    <string name="contact_twitter">Twitter</string>
+    <string name="contact_github">Github \t</string>
+    <string name="contact_linkedin">Linked In \t</string>
+    <string name="contact_facebook">Facebook \t</string>
+    <string name="contact_google">Google Plus \t</string>
+    <string name="contact_twitter">Twitter \t</string>
 
     <string name="achievement_academic">Academic Achievement</string>
     <string name="achievement_technical">Technical Achievement</string>

@@ -24,4 +24,7 @@
     <dimen name="padding_largest">40dp</dimen>
     <dimen name="padding_medium">20dp</dimen>
 
+    <dimen name="contact_button_height">60dp</dimen>
+    <dimen name="contact_button_width">100dp</dimen>
+
 </resources>
