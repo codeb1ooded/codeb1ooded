@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.igdtuw.megha.megha"
-        minSdkVersion 15
+        minSdkVersion 18
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -30,4 +30,5 @@ dependencies {
     compile 'net.steamcrafted:materialiconlib:1.1.1'
     compile 'com.romainpiel.shimmer:library:1.4.0@aar'
     compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile 'com.nightonke:wowoviewpager:1.0.2'
 }

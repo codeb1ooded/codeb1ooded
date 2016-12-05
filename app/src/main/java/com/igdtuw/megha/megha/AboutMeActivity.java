@@ -3,6 +3,7 @@ package com.igdtuw.megha.megha;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -24,6 +25,7 @@ import com.igdtuw.megha.megha.Fragments.AboutMeFragment;
 import com.igdtuw.megha.megha.Fragments.AchievementsFragment;
 import com.igdtuw.megha.megha.Fragments.ContactDetailsFragment;
 import com.igdtuw.megha.megha.Fragments.CoursesFragment;
+import com.igdtuw.megha.megha.Fragments.FragmentAbout;
 import com.igdtuw.megha.megha.Fragments.MiscellaneousFragment;
 import com.igdtuw.megha.megha.Fragments.ProjectsFragment;
 import com.igdtuw.megha.megha.Fragments.TechnicalSkillsFragment;
@@ -32,6 +34,8 @@ import java.net.MalformedURLException;
 
 public class AboutMeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    Fragment currentFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +53,18 @@ public class AboutMeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        AboutMeFragment aboutMeFragment = new AboutMeFragment();
+        FragmentAbout aboutMeFragment = new FragmentAbout();
+        currentFragment = aboutMeFragment;
         getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, aboutMeFragment).commit();
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+
+        if(currentFragment instanceof IOnFocusListenable) {
+            ((IOnFocusListenable) currentFragment).onWindowFocusChanged(hasFocus);
+        }
     }
 
     @Override
@@ -70,10 +84,12 @@ public class AboutMeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_about_me) {
-            AboutMeFragment fragment = new AboutMeFragment();
+            FragmentAbout fragment = new FragmentAbout();
+            currentFragment = fragment;
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_projects) {
             ProjectsFragment fragment = new ProjectsFragment();
+            currentFragment = fragment;
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_resume) {
             Intent i = new Intent();
@@ -82,18 +98,23 @@ public class AboutMeActivity extends AppCompatActivity
             startActivity(i);
         } else if (id == R.id.nav_technical_skills) {
             TechnicalSkillsFragment fragment = new TechnicalSkillsFragment();
+            currentFragment = fragment;
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_courses) {
             CoursesFragment fragment = new CoursesFragment();
+            currentFragment = fragment;
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_achievements) {
             AchievementsFragment fragment = new AchievementsFragment();
+            currentFragment = fragment;
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_contact_details) {
             ContactDetailsFragment fragment = new ContactDetailsFragment();
+            currentFragment = fragment;
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_miscellaneous) {
             MiscellaneousFragment fragment = new MiscellaneousFragment();
+            currentFragment = fragment;
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_work_experience) {
 
