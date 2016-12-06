@@ -122,33 +122,6 @@ public class AboutMeActivity extends AppCompatActivity
         return true;
     }
 
-    public void projectRTI(View v){
-        Intent i = new Intent();
-        i.setClass(AboutMeActivity.this, RTIManagementSystem.class);
-        startActivity(i);
-    }
-    public void projectMovieplate(View v){
-        Intent i = new Intent();
-        i.setClass(AboutMeActivity.this, MoviePlate.class);
-        startActivity(i);
-    }
-    public void projectOthello(View v){
-        Intent i = new Intent();
-        i.setClass(AboutMeActivity.this, OthelloBoardGame.class);
-        startActivity(i);
-    }
-    public void projectEvently(View v){
-        Intent i = new Intent();
-        i.setClass(AboutMeActivity.this, Eventley.class);
-        startActivity(i);
-    }
-    public void projectCalculator(View v){
-        Intent i = new Intent();
-        i.setClass(AboutMeActivity.this, ScientficCalculator.class);
-        startActivity(i);
-    }
-
-
     public void miscellaneousEducation(View v){
         Intent i = new Intent();
         i.setClass(AboutMeActivity.this, EducationActivity.class);
