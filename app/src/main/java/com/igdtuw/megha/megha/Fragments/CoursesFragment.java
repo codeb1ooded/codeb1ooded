@@ -17,12 +17,13 @@ import android.widget.Toolbar;
 
 import com.igdtuw.megha.megha.Adapters.CourseAdapter;
 import com.igdtuw.megha.megha.Adapters.CourseRecyclerAdapter;
+import com.igdtuw.megha.megha.Constants;
 import com.igdtuw.megha.megha.R;
 
 /**
  * Created by megha on 10/7/16.
  */
-public class CoursesFragment extends Fragment {
+public class CoursesFragment extends Fragment implements Constants {
     ViewPager coursesViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
     @Nullable
@@ -77,11 +78,7 @@ public class CoursesFragment extends Fragment {
             if(section_num == 1){
                 view = inflater.inflate(R.layout.online_course_fragment, container, false);
                 RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.online_course_recycler_view);
-                String name[] = {"Html & CSS", "PHP", "Javascript", " LFS101x.2 Introduction to Linux", "Algorithms: Design and Analysis"};
-
-                String subText[] = {"Codecademy", "Codecademy", "Codecademy", "edX", "Coursera"};
-
-                CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), name, subText);
+                CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), ONLINE_COURSE_NAME, ONLINE_COURSE_SUBNAME);
                 recyclerView.setAdapter(adapter);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -89,12 +86,7 @@ public class CoursesFragment extends Fragment {
             else if(section_num == 2){
                 view = inflater.inflate(R.layout.graduate_course_fragment, container, false);
                 RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.graduate_course_recycler_view);
-                String [] name={"C/C++", "DS & Algorithms", "Database Management System", "Operating Systems",
-                        "Software Engineering"};
-
-                String [] subText={"1st semester", "4th semester", "3rd semester", "4th semester", "4th semester"};
-
-                CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), name, subText);
+                CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), GRADUATE_COURSE_NAME, GRADUATE_COURSE_SUBNAME);
                 recyclerView.setAdapter(adapter);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -102,11 +94,7 @@ public class CoursesFragment extends Fragment {
             else{
                 view = inflater.inflate(R.layout.exteranal_classroom_course_fragment, container, false);
                 RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.external_course_recycler_view);
-                String [] name={"Crux- Java", "Pandora- Android App Development", "Ethical Hacking"};
-
-                String [] subText={"Coding Blocks", "Coding Blocks", "I3indya Technologies"};
-
-                CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), name, subText);
+                CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), EXTERNAL_CLASSROOM_NAME, EXTERNAL_CLASSROOM_SUBNAME);
                 recyclerView.setAdapter(adapter);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));

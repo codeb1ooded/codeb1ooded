@@ -5,12 +5,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.igdtuw.megha.megha.Constants;
 import com.igdtuw.megha.megha.Fragments.TechnicalSkillsFragment;
 
 /**
  * Created by megha on 27/7/16.
  */
-public class SkillsAdapter extends FragmentStatePagerAdapter {
+public class SkillsAdapter extends FragmentStatePagerAdapter implements Constants {
     Context context = null;
     private int numofScreens;
     public SkillsAdapter(Context context, FragmentManager fm) {
@@ -27,26 +28,26 @@ public class SkillsAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if(position == 0)
-            return "Android";
+            return SKILL_ANDROID;
         else if(position == 1)
-            return  "Git & Github";
+            return  SKILL_GIT_GITHUB;
         else if(position == 2)
-            return  "Algorithm";
+            return  SKILL_ALGORITHM;
         else if(position == 3)
-            return  "Databases";
+            return  SKILL_DATABASES;
         else if(position == 4)
-            return  "Linux";
+            return  SKILL_LINUX;
         else if(position == 5)
-            return  "Python & Django";
+            return  SKILL_PYTHON_DJANGO;
         else if(position == 6)
-            return  "PHP & Xampp";
+            return  SKILL_PHP_XAMPP;
         else if(position == 7)
-            return  "Java";
+            return  SKILL_JAVA;
         else if(position == 8)
-            return  "C/C++";
+            return  SKILL_C_CPP;
         else if(position == 9)
-            return  "Ehtical Hacking";
-        return  "HTML, CSS & JS";
+            return  SKILL_ETHICAL_HACKING;
+        return  SKILL_HTML_CSS_JS;
     }
 
     @Override

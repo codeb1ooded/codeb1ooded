@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.igdtuw.megha.megha.Adapters.AchievementAdapter;
+import com.igdtuw.megha.megha.Constants;
 import com.igdtuw.megha.megha.R;
 
 import github.chenupt.springindicator.SpringIndicator;
@@ -18,7 +19,7 @@ import github.chenupt.springindicator.SpringIndicator;
 /**
  * Created by megha on 10/7/16.
  */
-public class AchievementsFragment extends Fragment {
+public class AchievementsFragment extends Fragment implements Constants {
 
     ViewPager achievementsViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
@@ -59,34 +60,34 @@ public class AchievementsFragment extends Fragment {
             TextView textView = (TextView) view.findViewById(R.id.individualAchivementText);
             TextView lastTextView = (TextView) view.findViewById(R.id.individualAchivementOrganizer);
             if(section_num == 1) {
-                titleTextView.setText("Aziz Premji Award");
-                textView.setText("Awarded Aziz Premji Award by Vivekanand School at Fragrance 2013-14 for displaying excellence in the field of IT");
-                lastTextView.setText("-Vivekanad School");
+                titleTextView.setText(AZIZ_PREMJI_AWARD_TITLE);
+                textView.setText(AZIZ_PREMJI_AWARD_CONTENT);
+                lastTextView.setText(AZIZ_PREMJI_AWARD_PRESENTER);
             }
             else if(section_num == 2) {
-                titleTextView.setText("CodeDiva");
-                textView.setText("I secured second position in a coding competition held by CSI-IGDTUW in association with HackerRank");
-                lastTextView.setText("-IGDTUW");
+                titleTextView.setText(CODE_DIVA_TITLE);
+                textView.setText(CODE_DIVA_CONTENT);
+                lastTextView.setText(CODE_DIVA_PRESENTER);
             }
             else if(section_num == 3) {
-                titleTextView.setText("Crytocodz");
-                textView.setText("Secured first position in Cryptocodz-14 and second position in Cryptocodz-13, held under Annual Cyber Celebration, Technowiz by Vivekanand Schhol");
-                lastTextView.setText("-Vivekanand School");
+                titleTextView.setText(CRYPTOCODZ_TITLE);
+                textView.setText(CRYPTOCODZ_CONTENT);
+                lastTextView.setText(CRYPTOCODZ_PRESENTER);
             }
             else if(section_num == 4) {
-                titleTextView.setText("Bugwars");
-                textView.setText("Secured third rank in Bugwars with team, organised by IEEE IGDTUW Student Chapter");
-                lastTextView.setText("-IGDTUW");
+                titleTextView.setText(BUGWARS_TITLE);
+                textView.setText(BUGWARS_CONTENT);
+                lastTextView.setText(BUGWARS_PRESENTER);
             }
             else if(section_num == 5) {
-                titleTextView.setText("Code and Counter");
-                textView.setText("Secured 19th rank with team in Code and Counter organised by Nagarro and Coding Blocks at HackerEarth platform");
-                lastTextView.setText("-Nagarro");
+                titleTextView.setText(CODE_N_COUNTER_TITLE);
+                textView.setText(CODE_N_COUNTER_CONTENT);
+                lastTextView.setText(CODE_N_COUNTER_PRESENTER);
             }
             else {
-                titleTextView.setText("Mass Awareness Campaign");
-                textView.setText("Certificate of Special Effort and Silver Medal by Care Promise Welfare Society for participating as volunteer in Mass Awareness Campaign against Cancer/ Hepatitis-B");
-                lastTextView.setText("-Care Promise Welfare Society");
+                titleTextView.setText(MASS_AWARENESS_CAMPAIGN_TITLE);
+                textView.setText(MASS_AWARENESS_CAMPAIGN_CONTENT);
+                lastTextView.setText(MASS_AWARENESS_CAMPAIGN_PRESENTER);
             }
             return view;
         }

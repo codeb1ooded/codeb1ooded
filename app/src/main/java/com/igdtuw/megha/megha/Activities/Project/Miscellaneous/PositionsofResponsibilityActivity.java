@@ -14,16 +14,5 @@ public class PositionsofResponsibilityActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_miscellaneous_positions_of_responsibility);
-/*
-
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.mis_por_recycler_view);
-        String name[] = {"IGDTUW", "Vivekanand School", "NJAP School"};
-        String subText[] = {"B.Tech (CSE)", "12th", "10th"};
-
-        PositionofResponsibilityRecyclerAdapter adapter = new PositionofResponsibilityRecyclerAdapter(PositionsofResponsibilityActivity.this, name, subText);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-*/
     }
 }

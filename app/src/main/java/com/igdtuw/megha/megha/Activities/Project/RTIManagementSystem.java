@@ -15,13 +15,14 @@ import android.widget.ImageView;
 
 import com.igdtuw.megha.megha.Adapters.ProjectEventleyAdapter;
 import com.igdtuw.megha.megha.Adapters.ProjectRTIAdapter;
+import com.igdtuw.megha.megha.Constants;
 import com.igdtuw.megha.megha.R;
 import com.r0adkll.slidr.Slidr;
 
 /**
  * Created by megha on 27/7/16.
  */
-public class RTIManagementSystem extends AppCompatActivity{
+public class RTIManagementSystem extends AppCompatActivity implements Constants {
 
     ViewPager projectViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
@@ -37,16 +38,14 @@ public class RTIManagementSystem extends AppCompatActivity{
     }
 
     public void showDemo(View v){
-        String url = "http://rti_igdtuw.site88.net";
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
+        i.setData(Uri.parse(RTI_DEMO_URL));
         startActivity(i);
     }
 
     public void showGithub(View v){
-        String url = "https://github.com/codeb1ooded/BMSU";
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
+        i.setData(Uri.parse(RTI_GITHUB_URL));
         startActivity(i);
     }
 

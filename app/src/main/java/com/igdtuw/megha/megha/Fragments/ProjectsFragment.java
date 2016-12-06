@@ -16,12 +16,13 @@ import com.igdtuw.megha.megha.Activities.Project.MoviePlate;
 import com.igdtuw.megha.megha.Activities.Project.OthelloBoardGame;
 import com.igdtuw.megha.megha.Activities.Project.RTIManagementSystem;
 import com.igdtuw.megha.megha.Activities.Project.ScientficCalculator;
+import com.igdtuw.megha.megha.Constants;
 import com.igdtuw.megha.megha.R;
 
 /**
  * Created by megha on 10/7/16.
  */
-public class ProjectsFragment extends Fragment {
+public class ProjectsFragment extends Fragment implements Constants{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -49,9 +50,8 @@ public class ProjectsFragment extends Fragment {
         hover_rti.findViewById(R.id.github).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/codeb1ooded/BMSU";
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
+                i.setData(Uri.parse(RTI_GITHUB_URL));
                 startActivity(i);
             }
         });
@@ -78,9 +78,8 @@ public class ProjectsFragment extends Fragment {
         hover_movieplate.findViewById(R.id.view_more).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/codeb1ooded/movieplate";
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
+                i.setData(Uri.parse(MOVIEPLATE_GITHUB_URL));
                 startActivity(i);
             }
         });
@@ -107,9 +106,8 @@ public class ProjectsFragment extends Fragment {
         hover_othello.findViewById(R.id.github).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/codeb1ooded/Othello";
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
+                i.setData(Uri.parse(OTHELLO_GITHUB_URL));
                 startActivity(i);
             }
         });
@@ -136,9 +134,8 @@ public class ProjectsFragment extends Fragment {
         hover_eventley.findViewById(R.id.github).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/codeb1ooded/OSM-EventGrade";
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
+                i.setData(Uri.parse(EVENTLEY_GITHUB_URL));
                 startActivity(i);
             }
         });
@@ -165,9 +162,8 @@ public class ProjectsFragment extends Fragment {
         hover_scientific_calculator.findViewById(R.id.github).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/codeb1ooded/Calculator";
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
+                i.setData(Uri.parse(SCIENTIFIC_CALCULATOR_GITHUB_URL));
                 startActivity(i);
             }
         });

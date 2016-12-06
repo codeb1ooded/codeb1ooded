@@ -30,7 +30,7 @@ import com.igdtuw.megha.megha.Fragments.ProjectsFragment;
 import com.igdtuw.megha.megha.Fragments.TechnicalSkillsFragment;
 
 public class AboutMeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, Constants {
 
     Fragment currentFragment;
 
@@ -91,7 +91,7 @@ public class AboutMeActivity extends AppCompatActivity
         } else if (id == R.id.nav_resume) {
             Intent i = new Intent();
             i.setAction(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("http://megha-code.github.io/resume_pdf.pdf"));
+            i.setData(Uri.parse(RESUME_URL));
             startActivity(i);
         } else if (id == R.id.nav_technical_skills) {
             TechnicalSkillsFragment fragment = new TechnicalSkillsFragment();
@@ -140,33 +140,28 @@ public class AboutMeActivity extends AppCompatActivity
 
 
     public void contactGithub(View v){
-        String url = "https://github.com/megha-code";
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
+        Intent i = new Intent (Intent.ACTION_VIEW);
+        i.setData(Uri.parse(GITHUB_PROFILE_URL));
         startActivity(i);
     }
     public void contactFacebook(View v){
-        String url = "https://www.facebook.com/meghaaggarwal.yv";
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
+        i.setData(Uri.parse(FACEBOOK_PROFILE_URL));
         startActivity(i);
     }
     public void contactLinkedin(View v){
-        String url = "https://www.linkedin.com/in/megha-aggarwal-772440104";
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
+        i.setData(Uri.parse(LINKEDIN_PROFILE_URL));
         startActivity(i);
     }
     public void contactGoogle(View v){
-        String url = "https://plus.google.com/+MeghaAggarwalMe";
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
+        i.setData(Uri.parse(GOOGLE_PLUS_PROFILE_URL));
         startActivity(i);
     }
     public void contactTwitter(View v){
-        String url = "https://twitter.com/Megha__Aggarwal";
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
+        i.setData(Uri.parse(TWITTER_PROFILE_URL));
         startActivity(i);
     }
 }

@@ -6,12 +6,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.igdtuw.megha.megha.Constants;
 import com.igdtuw.megha.megha.Fragments.CoursesFragment;
 
 /**
  * Created by megha on 23/7/16.
  */
-public class CourseAdapter extends FragmentStatePagerAdapter {
+public class CourseAdapter extends FragmentStatePagerAdapter implements Constants {
     Context context = null;
     private int numofScreens;
 
@@ -34,10 +35,10 @@ public class CourseAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if(position == 0)
-            return "Online Course";
+            return ONLINE_COURSES;
         else if(position == 1)
-            return  "graduate course";
-        return  "External Classroom";
+            return  GRADUATE_COURSES;
+        return  EXTERNAL_CLASSROOM;
     }
 
 }

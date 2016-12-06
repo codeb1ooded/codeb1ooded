@@ -14,13 +14,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.igdtuw.megha.megha.Adapters.ProjectMoviePlateAdapter;
+import com.igdtuw.megha.megha.Constants;
 import com.igdtuw.megha.megha.R;
 import com.r0adkll.slidr.Slidr;
 
 /**
  * Created by megha on 27/7/16.
  */
-public class MoviePlate extends AppCompatActivity {
+public class MoviePlate extends AppCompatActivity implements Constants {
 
     ViewPager projectViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
@@ -43,9 +44,8 @@ public class MoviePlate extends AppCompatActivity {
     }
 
     public void showGithub(View v){
-        String url = "https://github.com/codeb1ooded/movieplate";
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
+        i.setData(Uri.parse(MOVIEPLATE_GITHUB_URL));
         startActivity(i);
     }
 
