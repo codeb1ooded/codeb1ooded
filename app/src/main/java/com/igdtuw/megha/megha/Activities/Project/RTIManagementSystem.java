@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import com.igdtuw.megha.megha.Adapters.ProjectEventleyAdapter;
 import com.igdtuw.megha.megha.Adapters.ProjectRTIAdapter;
 import com.igdtuw.megha.megha.R;
+import com.r0adkll.slidr.Slidr;
 
 /**
  * Created by megha on 27/7/16.
@@ -28,6 +29,8 @@ public class RTIManagementSystem extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project_rti);
+        Slidr.attach(this);
+
         fragmentStatePagerAdapter = new ProjectRTIAdapter(getSupportFragmentManager());
         projectViewPager = (ViewPager) findViewById(R.id.containerProjectRTIFragment);
         projectViewPager.setAdapter(fragmentStatePagerAdapter);

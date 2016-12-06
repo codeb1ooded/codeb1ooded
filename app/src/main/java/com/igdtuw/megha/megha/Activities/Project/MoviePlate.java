@@ -15,6 +15,7 @@ import android.widget.ImageView;
 
 import com.igdtuw.megha.megha.Adapters.ProjectMoviePlateAdapter;
 import com.igdtuw.megha.megha.R;
+import com.r0adkll.slidr.Slidr;
 
 /**
  * Created by megha on 27/7/16.
@@ -27,6 +28,8 @@ public class MoviePlate extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project_movieplate);
+        Slidr.attach(this);
+
         fragmentStatePagerAdapter = new ProjectMoviePlateAdapter(getSupportFragmentManager());
         projectViewPager = (ViewPager) findViewById(R.id.containerProjectMovieplateFragment);
         projectViewPager.setAdapter(fragmentStatePagerAdapter);

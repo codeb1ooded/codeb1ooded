@@ -15,6 +15,7 @@ import android.widget.ImageView;
 
 import com.igdtuw.megha.megha.Adapters.ProjectEventleyAdapter;
 import com.igdtuw.megha.megha.R;
+import com.r0adkll.slidr.Slidr;
 
 /**
  * Created by megha on 27/7/16.
@@ -27,6 +28,8 @@ public class Eventley extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project_eventley);
+        Slidr.attach(this);
+
         fragmentStatePagerAdapter = new ProjectEventleyAdapter(getSupportFragmentManager());
         projectViewPager = (ViewPager) findViewById(R.id.containerProjectEventleyFragment);
         projectViewPager.setAdapter(fragmentStatePagerAdapter);

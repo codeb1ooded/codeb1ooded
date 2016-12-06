@@ -68,6 +68,8 @@
             />
 
         <TextView
+            tools:ignore="MissingPrefix"
+            fontPath="fonts/waltograph42.ttf"
             android:id="@+id/name"
             android:layout_width="250dp"
             android:layout_height="wrap_content"

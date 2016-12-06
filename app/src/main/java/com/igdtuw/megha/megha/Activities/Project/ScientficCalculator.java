@@ -15,6 +15,7 @@ import android.widget.ImageView;
 
 import com.igdtuw.megha.megha.Adapters.ProjectCalculatorAdapter;
 import com.igdtuw.megha.megha.R;
+import com.r0adkll.slidr.Slidr;
 
 /**
  * Created by megha on 27/7/16.
@@ -27,6 +28,8 @@ public class ScientficCalculator extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project_calculator);
+        Slidr.attach(this);
+
         fragmentStatePagerAdapter = new ProjectCalculatorAdapter(getSupportFragmentManager());
         projectViewPager = (ViewPager) findViewById(R.id.containerProjectCalculatorFragment);
         projectViewPager.setAdapter(fragmentStatePagerAdapter);

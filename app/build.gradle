@@ -10,6 +10,8 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
     }
     buildTypes {
         release {
@@ -33,4 +35,15 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.github.medyo:fancybuttons:1.8.2'
     compile 'com.github.chenupt.android:springindicator:1.0.2@aar'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+
+    // libraries for view hover: https://github.com/daimajia/AndroidViewHover
+    compile "com.android.support:support-v4:23.+"
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.easing:library:1.0.0@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.2@aar'
+    compile 'com.daimajia.androidviewhover:library:1.0.4@aar'
+
+    // library for slidable activity: https://github.com/r0adkll/Slidr
+    compile 'com.r0adkll:slidableactivity:2.0.5'
 }
