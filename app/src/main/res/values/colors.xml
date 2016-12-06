@@ -10,4 +10,11 @@
     <color name="colorNormal">#a167a5</color>
     <color name="colorLighter">#d3bccc</color>
     <color name="colorLightest">#e8d7f1</color>
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#3e806f</color>
+    <color name="indicator_5">#ca7421</color>
+    <color name="indicator_6">#FDBC7D</color>
 </resources>

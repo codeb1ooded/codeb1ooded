@@ -33,15 +33,15 @@ public class AchievementAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if(position == 0)
-            return "Aziz Premji Award";
+            return "1";
         else if(position == 1)
-            return  "CodeDiva";
+            return  "2";
         else if(position == 2)
-            return  "Cryptocodz";
+            return  "3";
         else if(position == 3)
-            return  "Bugwars";
+            return  "4";
         else if(position == 4)
-            return  "Code and Counter";
-        return  "Mass Awareness Campaign";
+            return  "5";
+        return  "6";
     }
 }

@@ -12,19 +12,21 @@
     <dimen name="big_text_size">40dp</dimen>
     <dimen name="medium_text_size">30dp</dimen>
     <dimen name="less_small_text_size">25dp</dimen>
+    <dimen name="small_text_size_16">16dp</dimen>
     <dimen name="small_text_size">20dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
-
 
     <dimen name="image_size">120dp</dimen>
     <dimen name="cv_text_size">80dp</dimen>
     <dimen name="icon_size">50dp</dimen>
 
+    <dimen name="padding_largest_70">70dp</dimen>
     <dimen name="padding_most_largest">60dp</dimen>
     <dimen name="padding_largest">40dp</dimen>
     <dimen name="padding_medium">20dp</dimen>
 
     <dimen name="contact_button_height">60dp</dimen>
     <dimen name="contact_button_width">100dp</dimen>
+    <dimen name="bullet_height">60dp</dimen>
 
 </resources>

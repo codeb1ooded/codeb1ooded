@@ -2,7 +2,6 @@ package com.igdtuw.megha.megha.Fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -13,10 +12,8 @@ import android.widget.TextView;
 
 import com.igdtuw.megha.megha.Adapters.AchievementAdapter;
 import com.igdtuw.megha.megha.R;
-import com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator;
 
-import java.util.Timer;
-import java.util.TimerTask;
+import github.chenupt.springindicator.SpringIndicator;
 
 /**
  * Created by megha on 10/7/16.
@@ -25,31 +22,16 @@ public class AchievementsFragment extends Fragment {
 
     ViewPager achievementsViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
-    DotIndicator indicator;
+    SpringIndicator indicator;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.achievements_fragment, container, false);
         fragmentStatePagerAdapter = new AchievementAdapter(getActivity(), getChildFragmentManager());
-        indicator = (DotIndicator) view.findViewById(R.id.bulletIndicator);
+        indicator = (SpringIndicator) view.findViewById(R.id.bulletIndicator);
         achievementsViewPager = (ViewPager) view.findViewById(R.id.containerAchievementsFragment);
         achievementsViewPager.setAdapter(fragmentStatePagerAdapter);
-        achievementsViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                indicator.setSelectedItem(position, true);
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
+        indicator.setViewPager(achievementsViewPager);
         return view;
     }
 

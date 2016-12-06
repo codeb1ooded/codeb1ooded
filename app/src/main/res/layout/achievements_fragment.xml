@@ -12,15 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/colorLightest"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingTop="@dimen/padding_largest_70"/>
 
-    <com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <github.chenupt.springindicator.SpringIndicator
+        app:siTextSize="@dimen/small_text_size_16"
+        app:siIndicatorColors="@array/indicator_colors"
+        app:siTextColor="@color/colorLighter"
+        app:siSelectedTextColor="@android:color/white"
+        app:siIndicatorColor="@color/colorPrimary"
         android:id="@+id/bulletIndicator"
-        app:numberOfDots='6'
-        app:selectedDotIndex='0'
-        android:layout_marginTop="400dp"
-        android:layout_gravity="center"/>
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_height="@dimen/bullet_height"/>
 
 </android.support.design.widget.CoordinatorLayout>
