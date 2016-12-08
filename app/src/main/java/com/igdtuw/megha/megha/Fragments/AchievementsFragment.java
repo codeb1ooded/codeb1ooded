@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.igdtuw.megha.megha.Adapters.AchievementAdapter;
-import com.igdtuw.megha.megha.Constants;
+import com.igdtuw.megha.megha.Constants.Constants;
 import com.igdtuw.megha.megha.R;
 
 import github.chenupt.springindicator.SpringIndicator;

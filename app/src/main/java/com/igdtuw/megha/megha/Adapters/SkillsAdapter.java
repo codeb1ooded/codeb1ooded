@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.igdtuw.megha.megha.Constants;
+import com.igdtuw.megha.megha.Constants.Constants;
 import com.igdtuw.megha.megha.Fragments.TechnicalSkillsFragment;
 
 /**

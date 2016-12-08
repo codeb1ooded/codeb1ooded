@@ -8,16 +8,13 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.igdtuw.megha.megha.Adapters.CourseAdapter;
 import com.igdtuw.megha.megha.Adapters.CourseRecyclerAdapter;
-import com.igdtuw.megha.megha.Constants;
+import com.igdtuw.megha.megha.Constants.Constants;
 import com.igdtuw.megha.megha.R;
 
 /**

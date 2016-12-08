@@ -13,14 +13,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.igdtuw.megha.megha.Activities.Project.Eventley;
 import com.igdtuw.megha.megha.Activities.Project.Miscellaneous.EducationActivity;
 import com.igdtuw.megha.megha.Activities.Project.Miscellaneous.PositionsofResponsibilityActivity;
 import com.igdtuw.megha.megha.Activities.Project.Miscellaneous.SocialWorkActivity;
-import com.igdtuw.megha.megha.Activities.Project.MoviePlate;
-import com.igdtuw.megha.megha.Activities.Project.OthelloBoardGame;
-import com.igdtuw.megha.megha.Activities.Project.RTIManagementSystem;
-import com.igdtuw.megha.megha.Activities.Project.ScientficCalculator;
+import com.igdtuw.megha.megha.Constants.Constants;
+import com.igdtuw.megha.megha.Constants.URLs;
 import com.igdtuw.megha.megha.Fragments.AboutMeFragment;
 import com.igdtuw.megha.megha.Fragments.AchievementsFragment;
 import com.igdtuw.megha.megha.Fragments.ContactDetailsFragment;
@@ -30,7 +27,7 @@ import com.igdtuw.megha.megha.Fragments.ProjectsFragment;
 import com.igdtuw.megha.megha.Fragments.TechnicalSkillsFragment;
 
 public class AboutMeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, Constants {
+        implements NavigationView.OnNavigationItemSelectedListener, Constants, URLs {
 
     Fragment currentFragment;
 

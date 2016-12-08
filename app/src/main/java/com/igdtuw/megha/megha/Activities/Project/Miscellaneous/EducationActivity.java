@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.igdtuw.megha.megha.Adapters.EducationRecyclerAdapter;
-import com.igdtuw.megha.megha.Constants;
+import com.igdtuw.megha.megha.Constants.Constants;
 import com.igdtuw.megha.megha.R;
 
 /**

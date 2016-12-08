@@ -14,14 +14,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.igdtuw.megha.megha.Adapters.ProjectMoviePlateAdapter;
-import com.igdtuw.megha.megha.Constants;
+import com.igdtuw.megha.megha.Constants.Constants;
+import com.igdtuw.megha.megha.Constants.URLs;
 import com.igdtuw.megha.megha.R;
 import com.r0adkll.slidr.Slidr;
 
 /**
  * Created by megha on 27/7/16.
  */
-public class MoviePlate extends AppCompatActivity implements Constants {
+public class MoviePlate extends AppCompatActivity implements URLs {
 
     ViewPager projectViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
