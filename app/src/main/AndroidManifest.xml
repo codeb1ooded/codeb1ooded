@@ -51,15 +51,15 @@
             android:theme="@style/Theme.MyTheme"
             android:label="Calculator" />
         <activity
-            android:name=".Activities.Project.Miscellaneous.EducationActivity"
+            android:name=".Activities.Miscellaneous.EducationActivity"
             android:screenOrientation="portrait"
             android:label="Education" />
         <activity
-            android:name=".Activities.Project.Miscellaneous.SocialWorkActivity"
+            android:name=".Activities.Miscellaneous.SocialWorkActivity"
             android:screenOrientation="portrait"
             android:label="Social Work" />
         <activity
-            android:name=".Activities.Project.Miscellaneous.PositionsofResponsibilityActivity"
+            android:name=".Activities.Miscellaneous.PositionsofResponsibilityActivity"
             android:screenOrientation="portrait"
             android:label="Positions of Responsibility" />
     </application>

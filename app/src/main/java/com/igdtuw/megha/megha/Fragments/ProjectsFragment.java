@@ -139,6 +139,8 @@ public class ProjectsFragment extends Fragment implements Constants, URLs, Proje
         View hover_eventley = LayoutInflater.from(getContext()).inflate(R.layout.hover, null);
         eventleyBlur.setHoverView(hover_eventley);
         hover_eventley.findViewById(R.id.view_demo_online).setVisibility(View.GONE);
+        eventleyBlur.addChildAppearAnimator(hover_eventley, R.id.view_demo_online, Techniques.FlipInX);
+        eventleyBlur.addChildDisappearAnimator(hover_eventley, R.id.view_demo_online, Techniques.FlipOutX);
         eventleyBlur.addChildAppearAnimator(hover_eventley, R.id.github, Techniques.FlipInX);
         eventleyBlur.addChildDisappearAnimator(hover_eventley, R.id.github, Techniques.FlipOutX);
         eventleyBlur.addChildAppearAnimator(hover_eventley, R.id.view_more, Techniques.FlipInX);
@@ -158,6 +160,14 @@ public class ProjectsFragment extends Fragment implements Constants, URLs, Proje
             public void onClick(View v) {
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(EVENTLEY_GITHUB_URL));
+                startActivity(i);
+            }
+        });
+        hover_eventley.findViewById(R.id.view_demo_online).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(EVENTLEY_DEMO_URL));
                 startActivity(i);
             }
         });

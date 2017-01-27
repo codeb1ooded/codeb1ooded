@@ -13,9 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.igdtuw.megha.megha.Activities.Project.Miscellaneous.EducationActivity;
-import com.igdtuw.megha.megha.Activities.Project.Miscellaneous.PositionsofResponsibilityActivity;
-import com.igdtuw.megha.megha.Activities.Project.Miscellaneous.SocialWorkActivity;
+import com.igdtuw.megha.megha.Activities.Miscellaneous.EducationActivity;
+import com.igdtuw.megha.megha.Activities.Miscellaneous.PositionsofResponsibilityActivity;
+import com.igdtuw.megha.megha.Activities.Miscellaneous.SocialWorkActivity;
 import com.igdtuw.megha.megha.Constants.Constants;
 import com.igdtuw.megha.megha.Constants.URLs;
 import com.igdtuw.megha.megha.Fragments.AboutMeFragment;

@@ -1,4 +1,4 @@
-package com.igdtuw.megha.megha.Activities.Project.Miscellaneous;
+package com.igdtuw.megha.megha.Activities.Miscellaneous;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
