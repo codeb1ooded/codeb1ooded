@@ -49,8 +49,8 @@ public interface Constants {
     String ONLINE_COURSE_SUBNAME[] = {"Codecademy", "Codecademy", "Codecademy", "edX", "Coursera"};
     String GRADUATE_COURSE_NAME[] = {"C/C++", "DS & Algorithms", "Database Management System", "Operating Systems", "Software Engineering"};
     String GRADUATE_COURSE_SUBNAME[] = {"1st semester", "4th semester", "3rd semester", "4th semester", "4th semester"};
-    String EXTERNAL_CLASSROOM_NAME[] = {"Crux- Java", "Pandora- Android App Development", "Ethical Hacking"};
-    String EXTERNAL_CLASSROOM_SUBNAME[] = {"Coding Blocks", "Coding Blocks", "I3indya Technologies"};
+    String EXTERNAL_CLASSROOM_NAME[] = {"OSM - Developer's Perspective", "Pandora - Android App Development", "Crux - Java", "Ethical Hacking"};
+    String EXTERNAL_CLASSROOM_SUBNAME[] = {"IGDTUW", "Coding Blocks", "Coding Blocks", "I3indya Technologies"};
 
     // Education string arrays
     String EDUCATION_SCHOOL_NAME[] = {"IGDTUW", "Vivekanand School", "NJAP School"};

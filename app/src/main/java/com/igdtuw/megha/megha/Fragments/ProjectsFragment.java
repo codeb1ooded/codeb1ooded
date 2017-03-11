@@ -42,6 +42,7 @@ public class ProjectsFragment extends Fragment implements Constants, URLs, Proje
         BlurLayout rtiBlur = (BlurLayout) view.findViewById(R.id.view_hover_rti);
         View hover_rti = LayoutInflater.from(getContext()).inflate(R.layout.hover, null);
         rtiBlur.setHoverView(hover_rti);
+        hover_rti.findViewById(R.id.play_store).setVisibility(View.GONE);
         rtiBlur.addChildAppearAnimator(hover_rti, R.id.view_demo_online, Techniques.FlipInX);
         rtiBlur.addChildDisappearAnimator(hover_rti, R.id.view_demo_online, Techniques.FlipOutX);
         rtiBlur.addChildAppearAnimator(hover_rti, R.id.github, Techniques.FlipInX);
@@ -80,6 +81,7 @@ public class ProjectsFragment extends Fragment implements Constants, URLs, Proje
         BlurLayout movieplateBlur = (BlurLayout) view.findViewById(R.id.view_hover_movieplate);
         View hover_movieplate = LayoutInflater.from(getContext()).inflate(R.layout.hover, null);
         movieplateBlur.setHoverView(hover_movieplate);
+        hover_movieplate.findViewById(R.id.play_store).setVisibility(View.GONE);
         hover_movieplate.findViewById(R.id.view_demo_online).setVisibility(View.GONE);
         movieplateBlur.addChildAppearAnimator(hover_movieplate, R.id.github, Techniques.FlipInX);
         movieplateBlur.addChildDisappearAnimator(hover_movieplate, R.id.github, Techniques.FlipOutX);
@@ -109,6 +111,7 @@ public class ProjectsFragment extends Fragment implements Constants, URLs, Proje
         BlurLayout othelloBlur = (BlurLayout) view.findViewById(R.id.view_hover_othello);
         View hover_othello = LayoutInflater.from(getContext()).inflate(R.layout.hover, null);
         othelloBlur.setHoverView(hover_othello);
+        hover_othello.findViewById(R.id.play_store).setVisibility(View.GONE);
         hover_othello.findViewById(R.id.view_demo_online).setVisibility(View.GONE);
         othelloBlur.addChildAppearAnimator(hover_othello, R.id.github, Techniques.FlipInX);
         othelloBlur.addChildDisappearAnimator(hover_othello, R.id.github, Techniques.FlipOutX);
@@ -138,6 +141,7 @@ public class ProjectsFragment extends Fragment implements Constants, URLs, Proje
         BlurLayout eventleyBlur = (BlurLayout) view.findViewById(R.id.view_hover_eventley);
         View hover_eventley = LayoutInflater.from(getContext()).inflate(R.layout.hover, null);
         eventleyBlur.setHoverView(hover_eventley);
+        hover_eventley.findViewById(R.id.play_store).setVisibility(View.GONE);
         hover_eventley.findViewById(R.id.view_demo_online).setVisibility(View.GONE);
         eventleyBlur.addChildAppearAnimator(hover_eventley, R.id.view_demo_online, Techniques.FlipInX);
         eventleyBlur.addChildDisappearAnimator(hover_eventley, R.id.view_demo_online, Techniques.FlipOutX);
@@ -180,6 +184,8 @@ public class ProjectsFragment extends Fragment implements Constants, URLs, Proje
         hover_scientific_calculator.findViewById(R.id.view_demo_online).setVisibility(View.GONE);
         scienificCalculatorBlur.addChildAppearAnimator(hover_scientific_calculator, R.id.github, Techniques.FlipInX);
         scienificCalculatorBlur.addChildDisappearAnimator(hover_scientific_calculator, R.id.github, Techniques.FlipOutX);
+        scienificCalculatorBlur.addChildAppearAnimator(hover_scientific_calculator, R.id.play_store, Techniques.FlipInX);
+        scienificCalculatorBlur.addChildDisappearAnimator(hover_scientific_calculator, R.id.play_store, Techniques.FlipOutX);
         scienificCalculatorBlur.addChildAppearAnimator(hover_scientific_calculator, R.id.view_more, Techniques.FlipInX);
         scienificCalculatorBlur.addChildDisappearAnimator(hover_scientific_calculator, R.id.view_more, Techniques.FlipOutX);
         TextView scientificCalculatorTextView = (TextView) hover_scientific_calculator.findViewById(R.id.hover_text_view);
@@ -189,6 +195,14 @@ public class ProjectsFragment extends Fragment implements Constants, URLs, Proje
             public void onClick(View v) {
                 Intent i = new Intent();
                 i.setClass(getActivity(), ScientficCalculator.class);
+                startActivity(i);
+            }
+        });
+        hover_scientific_calculator.findViewById(R.id.play_store).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(SCIENTIFIC_CALCULATOR_PS_URL));
                 startActivity(i);
             }
         });

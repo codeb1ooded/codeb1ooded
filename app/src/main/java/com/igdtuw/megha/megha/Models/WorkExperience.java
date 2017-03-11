@@ -59,7 +59,7 @@ public class WorkExperience implements Constants, Projects, URLs {
         workProject.add(new WorkProject(CREAPPTIC_TRADING_ADDA_TITLE, CREAPPTIC_TRADING_ADDA_DESCRIPTION,
                 "App Developer", TRADING_ADDA_PS_URL, "Play Store"));
         workProject.add(new WorkProject(CREAPPTIC_MYSORE_WEST_TITLE, CREAPPTIC_MYSORE_WEST_DESCRIPTION,
-                "App Developer", TRADING_ADDA_PS_URL, "Play Store"));
+                "App Developer", MYSORE_WEST_PS_URL, "Play Store"));
         workExperiences.add(new WorkExperience(WORK_TITLE_CREAPPTIC, WORK_DESCRIPTION_CREAPPTIC,
                 WORK_ROLE_CREAPPTIC, workProject));
 

@@ -43,6 +43,17 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
+                app:materialIcon="google_play"
+                app:materialIconColor="@color/colorNormal"
+                app:materialIconSize="48dp"
+                android:scaleType="center"
+                android:background="@android:color/transparent"
+                android:id="@+id/play_store"
+                />
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 app:materialIcon="github_circle"
                 app:materialIconColor="@color/colorNormal"
                 app:materialIconSize="48dp"
