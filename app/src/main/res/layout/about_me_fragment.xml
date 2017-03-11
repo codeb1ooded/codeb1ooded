@@ -79,7 +79,7 @@
             android:text="@string/my_name"
             android:layout_below="@+id/cv_logo"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/std_margin"
             android:gravity="center"
             />
 

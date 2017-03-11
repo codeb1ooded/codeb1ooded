@@ -57,4 +57,9 @@ public interface Constants {
     String EDUCATION_COURSE_NAME[] = {"B.Tech (CSE)", "12th", "10th"};
     String EDUCATION_PERCENTAGE[] = {"86.23%", "94.6%", "10 CGPA"};
 
+    // Work experience strings
+    String WORK_TITLE_CREAPPTIC = "Creapptic Technologies";
+    String WORK_DESCRIPTION_CREAPPTIC = "Worked as Mobile App Developer Intern";
+    String WORK_ROLE_CREAPPTIC = "Mobile App Developer";
+
 }

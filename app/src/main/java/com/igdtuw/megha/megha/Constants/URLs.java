@@ -24,6 +24,10 @@ public interface URLs {
     String RTI_DEMO_URL = "https://rti-igdtuw.000webhostapp.com";
     String EVENTLEY_DEMO_URL = "http://eventley.herokuapp.com";
 
+    // Play store URLs
+    String TRADING_ADDA_PS_URL = "https://play.google.com/store/apps/details?id=trading.adda";
+    String MYSORE_WEST_PS_URL = "https://play.google.com/store/apps/details?id=naddy.rotary";
+
     // Resume URL on portfolio
     String RESUME_URL = "http://codeb1ooded.github.io/resume_pdf.pdf";
 

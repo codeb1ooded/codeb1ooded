@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/std_margin"
+    android:layout_marginLeft="@dimen/std_margin"
+    android:layout_marginRight="@dimen/std_margin"
+    android:foreground="?attr/selectableItemBackground"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:background="@color/colorNormal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorNormal">
+
+        <TextView
+            android:id="@+id/work_project_title"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorLightest" />
+
+        <TextView
+            android:id="@+id/work_project_role"
+            android:layout_below="@id/work_project_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="16sp"
+            android:textColor="@color/colorLightest" />
+
+        <TextView
+            android:id="@+id/work_project_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/work_project_role"
+            android:textColor="@color/colorLightest"
+            android:textAlignment="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_centerHorizontal="true"
+            android:text="Description"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/work_project_url"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_text_size"
+            android:text="URL"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorLightest"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_below="@id/work_project_description"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/small_text_size_16"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

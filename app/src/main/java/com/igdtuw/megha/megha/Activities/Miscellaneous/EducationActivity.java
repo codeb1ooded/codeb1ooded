@@ -19,9 +19,6 @@ public class EducationActivity extends AppCompatActivity implements Constants {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_miscellaneous_education);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.mis_education_recycler_view);
-        String name[];
-        String subText[];
-        String percentage[];
 
         EducationRecyclerAdapter adapter = new EducationRecyclerAdapter(EducationActivity.this,
                 EDUCATION_SCHOOL_NAME, EDUCATION_COURSE_NAME, EDUCATION_PERCENTAGE);

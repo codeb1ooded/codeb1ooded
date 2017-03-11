@@ -1,4 +1,4 @@
-package com.igdtuw.megha.megha;
+package com.igdtuw.megha.megha.Activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -25,6 +25,9 @@ import com.igdtuw.megha.megha.Fragments.CoursesFragment;
 import com.igdtuw.megha.megha.Fragments.MiscellaneousFragment;
 import com.igdtuw.megha.megha.Fragments.ProjectsFragment;
 import com.igdtuw.megha.megha.Fragments.TechnicalSkillsFragment;
+import com.igdtuw.megha.megha.Fragments.WorkExperienceFragment;
+import com.igdtuw.megha.megha.IOnFocusListenable;
+import com.igdtuw.megha.megha.R;
 
 public class AboutMeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, Constants, URLs {
@@ -100,6 +103,10 @@ public class AboutMeActivity extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_achievements) {
             AchievementsFragment fragment = new AchievementsFragment();
+            currentFragment = fragment;
+            getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
+        } else if (id == R.id.nav_work_experience) {
+            WorkExperienceFragment fragment = new WorkExperienceFragment();
             currentFragment = fragment;
             getSupportFragmentManager().beginTransaction().replace(R.id.coordinatorLayoutMainActivity, fragment).commit();
         } else if (id == R.id.nav_contact_details) {

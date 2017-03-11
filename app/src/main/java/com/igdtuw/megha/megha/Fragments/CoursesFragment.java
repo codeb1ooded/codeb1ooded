@@ -89,7 +89,7 @@ public class CoursesFragment extends Fragment implements Constants {
                 recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
             }
             else{
-                view = inflater.inflate(R.layout.exteranal_classroom_course_fragment, container, false);
+                view = inflater.inflate(R.layout.external_classroom_course_fragment, container, false);
                 RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.external_course_recycler_view);
                 CourseRecyclerAdapter adapter = new CourseRecyclerAdapter(getActivity(), EXTERNAL_CLASSROOM_NAME, EXTERNAL_CLASSROOM_SUBNAME);
                 recyclerView.setAdapter(adapter);
