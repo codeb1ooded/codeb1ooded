@@ -22,7 +22,7 @@
                 android:textColor="@color/colorLightest"
                 android:text="@string/project_scientific_calculator"
                 android:layout_margin="@dimen/margin"/>
-            <com.igdtuw.megha.megha.CustomLayout.AutoSwitchViewPager
+            <com.codeb1ooded.megha.megha.CustomLayout.AutoSwitchViewPager
                 android:id="@+id/containerProjectCalculatorFragment"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"

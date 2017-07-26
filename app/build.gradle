@@ -6,17 +6,41 @@ android {
 
     defaultConfig {
         applicationId "com.igdtuw.megha.megha"
-        minSdkVersion 18
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 51
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         renderscriptTargetApi 19
         renderscriptSupportModeEnabled true
     }
-    buildTypes {
+    signingConfigs {
         release {
+            storeFile file("codeb1ooded")
+            storePassword "codeboneooded"
+            keyAlias "codeb1ooded"
+            keyPassword "codeboneooded"
+        }
+    }
+    buildTypes {
+
+        debug {
+            shrinkResources false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:support-annotations:24.2.1'
         }
     }
 }

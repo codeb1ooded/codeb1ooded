@@ -7,6 +7,6 @@
     android:layout_alignParentTop="true"
     android:layout_alignParentRight="true"
     android:layout_alignParentLeft="true"
-    tools:context="com.igdtuw.megha.megha.SplashScreen"
+    tools:context="com.codeb1ooded.megha.megha.SplashScreen"
     android:background="@drawable/semicolon">
 </RelativeLayout>

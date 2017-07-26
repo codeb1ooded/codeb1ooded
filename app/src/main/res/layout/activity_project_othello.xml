@@ -22,7 +22,7 @@
                 android:textSize="@dimen/big_text_size"
                 android:text="@string/project_othello"
                 android:layout_margin="@dimen/margin"/>
-            <com.igdtuw.megha.megha.CustomLayout.AutoSwitchViewPager
+            <com.codeb1ooded.megha.megha.CustomLayout.AutoSwitchViewPager
                 android:id="@+id/containerProjectOthelloFragment"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
