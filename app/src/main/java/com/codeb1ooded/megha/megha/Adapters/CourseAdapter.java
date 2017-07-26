@@ -1,6 +1,7 @@
 package com.codeb1ooded.megha.megha.Adapters;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -29,7 +30,11 @@ public class CourseAdapter extends FragmentStatePagerAdapter implements Constant
 
     @Override
     public Fragment getItem(int position) {
-        return CoursesFragment.CoursesIndividualFragment.newInstance(position + 1);
+        CoursesFragment.CoursesIndividualFragment fragment = new CoursesFragment.CoursesIndividualFragment();
+        Bundle args = new Bundle();
+        args.putInt(CoursesFragment.ARG_SECTION_NUMBER, position + 1);
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override

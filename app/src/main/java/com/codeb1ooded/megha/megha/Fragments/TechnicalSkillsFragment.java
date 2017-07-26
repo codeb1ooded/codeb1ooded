@@ -1,9 +1,11 @@
 package com.codeb1ooded.megha.megha.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -12,7 +14,8 @@ import android.view.ViewGroup;
 
 import com.ToxicBakery.viewpager.transforms.CubeOutTransformer;
 import com.ToxicBakery.viewpager.transforms.RotateUpTransformer;
-import com.codeb1ooded.megha.megha.Adapters.SkillsAdapter;
+import com.codeb1ooded.megha.megha.Constants.Constants;
+import com.codeb1ooded.megha.megha.Constants.Counts;
 import com.codeb1ooded.megha.megha.R;
 
 /**
@@ -20,6 +23,7 @@ import com.codeb1ooded.megha.megha.R;
  */
 public class TechnicalSkillsFragment extends Fragment {
 
+    public static final String ARG_SECTION_NUMBER = "section_number";
 
     ViewPager skillsViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
@@ -60,19 +64,6 @@ public class TechnicalSkillsFragment extends Fragment {
 
     public static class SkillsIndividualFragment extends Fragment{
 
-        public static final String ARG_SECTION_NUMBER = "section_number";
-
-        public SkillsIndividualFragment(){
-        }
-
-        public static SkillsIndividualFragment newInstance(int sectionNumber) {
-            SkillsIndividualFragment fragment = new SkillsIndividualFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
         @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -101,6 +92,41 @@ public class TechnicalSkillsFragment extends Fragment {
             else
                 view = inflater.inflate(R.layout.fragment_skills_htmlcssjs, container, false);
             return view;
+        }
+    }
+
+    public static class SkillsAdapter extends FragmentStatePagerAdapter implements Constants, Counts {
+
+        Context context = null;
+        private int numofScreens;
+        private String[] screenTitles;
+
+        public SkillsAdapter(Context context, FragmentManager fm) {
+            super(fm);
+            this.context = context;
+            numofScreens = SKILL_FRAGMENTS;
+            screenTitles = new String[] {  SKILL_ANDROID, SKILL_GIT_GITHUB, SKILL_ALGORITHM, SKILL_DATABASES, SKILL_LINUX,
+                    SKILL_PYTHON_DJANGO, SKILL_PHP_XAMPP, SKILL_JAVA, SKILL_C_CPP, SKILL_ETHICAL_HACKING,
+                    SKILL_HTML_CSS_JS};
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            SkillsIndividualFragment fragment = new SkillsIndividualFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, position + 1);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return screenTitles[position];
+        }
+
+        @Override
+        public int getCount() {
+            return numofScreens;
         }
     }
 

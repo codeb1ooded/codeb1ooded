@@ -16,7 +16,7 @@ import com.codeb1ooded.megha.megha.Activities.Project.Eventley;
 import com.codeb1ooded.megha.megha.Activities.Project.MoviePlate;
 import com.codeb1ooded.megha.megha.Activities.Project.OthelloBoardGame;
 import com.codeb1ooded.megha.megha.Activities.Project.RTIManagementSystem;
-import com.codeb1ooded.megha.megha.Activities.Project.ScientficCalculator;
+import com.codeb1ooded.megha.megha.Activities.Project.ScientificCalculator;
 import com.codeb1ooded.megha.megha.Constants.Constants;
 import com.codeb1ooded.megha.megha.Constants.Projects;
 import com.codeb1ooded.megha.megha.Constants.URLs;
@@ -194,7 +194,7 @@ public class ProjectsFragment extends Fragment implements Constants, URLs, Proje
             @Override
             public void onClick(View v) {
                 Intent i = new Intent();
-                i.setClass(getActivity(), ScientficCalculator.class);
+                i.setClass(getActivity(), ScientificCalculator.class);
                 startActivity(i);
             }
         });

@@ -11,8 +11,6 @@ import android.view.MotionEvent;
  */
 public class AutoSwitchViewPager extends ViewPager {
 
-
-
     private Runnable  mSwither = new Runnable() {
 
         /*
@@ -23,15 +21,12 @@ public class AutoSwitchViewPager extends ViewPager {
          */
         @Override
         public void run() {
-            if( AutoSwitchViewPager.this.getAdapter() != null )
-            {
+            if( AutoSwitchViewPager.this.getAdapter() != null ) {
                 int count = AutoSwitchViewPager.this.getCurrentItem();
 
-                if( count ==  (AutoSwitchViewPager.this.getAdapter().getCount() - 1) )
-                {
+                if( count ==  (AutoSwitchViewPager.this.getAdapter().getCount() - 1) ) {
                     count = 0;
-                }else
-                {
+                }else {
                     count++;
                 }
 
@@ -41,7 +36,6 @@ public class AutoSwitchViewPager extends ViewPager {
             AutoSwitchViewPager.this.postDelayed(this, 2000);
         }
     };
-
 
     /**
      * @param context
@@ -87,7 +81,5 @@ public class AutoSwitchViewPager extends ViewPager {
         }
         return super.onTouchEvent(arg0);
     }
-
-
 
 }

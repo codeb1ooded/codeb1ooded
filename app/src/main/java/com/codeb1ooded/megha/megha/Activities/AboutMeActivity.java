@@ -14,7 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.codeb1ooded.megha.megha.Activities.Miscellaneous.EducationActivity;
-import com.codeb1ooded.megha.megha.Activities.Miscellaneous.PositionsofResponsibilityActivity;
+import com.codeb1ooded.megha.megha.Activities.Miscellaneous.PositionsOfResponsibilityActivity;
 import com.codeb1ooded.megha.megha.Activities.Miscellaneous.SocialWorkActivity;
 import com.codeb1ooded.megha.megha.Constants.Constants;
 import com.codeb1ooded.megha.megha.Constants.URLs;
@@ -138,7 +138,7 @@ public class AboutMeActivity extends AppCompatActivity
     }
     public void miscellaneousPositionofResponsibility(View v){
         Intent i = new Intent();
-        i.setClass(AboutMeActivity.this, PositionsofResponsibilityActivity.class);
+        i.setClass(AboutMeActivity.this, PositionsOfResponsibilityActivity.class);
         startActivity(i);
     }
 

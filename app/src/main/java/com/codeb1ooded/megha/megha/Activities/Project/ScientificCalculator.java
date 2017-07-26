@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.codeb1ooded.megha.megha.Adapters.ProjectCalculatorAdapter;
+import com.codeb1ooded.megha.megha.Constants.Counts;
 import com.codeb1ooded.megha.megha.Constants.URLs;
 import com.codeb1ooded.megha.megha.R;
 import com.r0adkll.slidr.Slidr;
@@ -21,7 +22,9 @@ import com.r0adkll.slidr.Slidr;
 /**
  * Created by megha on 27/7/16.
  */
-public class ScientficCalculator extends AppCompatActivity implements URLs {
+public class ScientificCalculator extends AppCompatActivity implements URLs {
+
+    public static final String ARG_SECTION_NUMBER = "section_number";
 
     ViewPager projectViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
@@ -51,19 +54,6 @@ public class ScientficCalculator extends AppCompatActivity implements URLs {
 
     public static class ProjectIndividualFragment extends Fragment {
 
-        public static final String ARG_SECTION_NUMBER = "section_number";
-
-        public ProjectIndividualFragment(){
-        }
-
-        public static ProjectIndividualFragment newInstance(int sectionNumber) {
-            ProjectIndividualFragment fragment = new ProjectIndividualFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
         @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -87,4 +77,27 @@ public class ScientficCalculator extends AppCompatActivity implements URLs {
             return view;
         }
     }
+
+    public class ProjectCalculatorAdapter extends FragmentStatePagerAdapter implements Counts {
+        private int numofScreens;
+        public ProjectCalculatorAdapter(FragmentManager fm) {
+            super(fm);
+            numofScreens = PROJECT_CALCULATOR_FRAGMENTS;
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            ProjectIndividualFragment fragment = new ProjectIndividualFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, position+1);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public int getCount() {
+            return numofScreens;
+        }
+    }
+
 }

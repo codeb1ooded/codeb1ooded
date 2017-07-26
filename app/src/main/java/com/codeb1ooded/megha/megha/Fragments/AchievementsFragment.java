@@ -1,8 +1,10 @@
 package com.codeb1ooded.megha.megha.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -10,8 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.codeb1ooded.megha.megha.Adapters.AchievementAdapter;
 import com.codeb1ooded.megha.megha.Constants.Constants;
+import com.codeb1ooded.megha.megha.Constants.Counts;
 import com.codeb1ooded.megha.megha.R;
 
 import github.chenupt.springindicator.SpringIndicator;
@@ -20,6 +22,8 @@ import github.chenupt.springindicator.SpringIndicator;
  * Created by megha on 10/7/16.
  */
 public class AchievementsFragment extends Fragment implements Constants {
+
+    public static final String ARG_SECTION_NUMBER = "section_number";
 
     ViewPager achievementsViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
@@ -36,20 +40,37 @@ public class AchievementsFragment extends Fragment implements Constants {
         return view;
     }
 
-    public static class AchievementIndividualFragment extends Fragment{
+    public static class AchievementAdapter extends FragmentStatePagerAdapter implements Counts {
+        Context context = null;
+        private int numOfScreens;
 
-        public static final String ARG_SECTION_NUMBER = "section_number";
-
-        public AchievementIndividualFragment(){
+        public AchievementAdapter(Context context, FragmentManager fm) {
+            super(fm);
+            this.context = context;
+            numOfScreens = ACHIEVEMENT_FRAGMENTS;
         }
 
-        public static AchievementIndividualFragment newInstance(int sectionNumber) {
-            AchievementIndividualFragment fragment = new AchievementIndividualFragment();
+        @Override
+        public Fragment getItem(int position) {
+            AchievementsFragment.AchievementIndividualFragment fragment = new AchievementsFragment.AchievementIndividualFragment();
             Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            args.putInt(AchievementsFragment.ARG_SECTION_NUMBER, position + 1);
             fragment.setArguments(args);
             return fragment;
         }
+
+        @Override
+        public int getCount() {
+            return numOfScreens;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return position + 1 + "";
+        }
+    }
+
+    public static class AchievementIndividualFragment extends Fragment{
 
         @Nullable
         @Override

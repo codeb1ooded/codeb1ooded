@@ -1,5 +1,6 @@
 package com.codeb1ooded.megha.megha.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -11,9 +12,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.codeb1ooded.megha.megha.Adapters.CourseAdapter;
-import com.codeb1ooded.megha.megha.Adapters.CourseRecyclerAdapter;
 import com.codeb1ooded.megha.megha.Constants.Constants;
 import com.codeb1ooded.megha.megha.R;
 
@@ -21,6 +23,8 @@ import com.codeb1ooded.megha.megha.R;
  * Created by megha on 10/7/16.
  */
 public class CoursesFragment extends Fragment implements Constants {
+
+    public static final String ARG_SECTION_NUMBER = "section_number";
     ViewPager coursesViewPager;
     private FragmentStatePagerAdapter fragmentStatePagerAdapter;
     @Nullable
@@ -38,34 +42,14 @@ public class CoursesFragment extends Fragment implements Constants {
                 coursesViewPager.setCurrentItem(tab.getPosition());
             }
 
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
+            @Override public void onTabUnselected(TabLayout.Tab tab) {}
+            @Override public void onTabReselected(TabLayout.Tab tab) {}
         });
 
         return view;
     }
 
     public static class CoursesIndividualFragment extends Fragment{
-
-        public static final String ARG_SECTION_NUMBER = "section_number";
-
-        public CoursesIndividualFragment(){
-        }
-
-        public static CoursesIndividualFragment newInstance(int sectionNumber) {
-            CoursesIndividualFragment fragment = new CoursesIndividualFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
 
         @Nullable
         @Override
@@ -99,4 +83,57 @@ public class CoursesFragment extends Fragment implements Constants {
             return view;
         }
     }
+
+    public static class CourseRecyclerAdapter extends  RecyclerView.Adapter<CourseRecyclerViewHolder> {
+
+        String name[];
+        String subText[];
+        Context context;
+        LayoutInflater inflater;
+
+        public CourseRecyclerAdapter(Context context, String name[], String subText[]) {
+            this.name = name;
+            this.subText = subText;
+            this.context=context;
+            inflater=LayoutInflater.from(context);
+        }
+        @Override
+        public CourseRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            View v = inflater.inflate(R.layout.utility_item_list, parent, false);
+            CourseRecyclerViewHolder viewHolder = new CourseRecyclerViewHolder(v);
+            return viewHolder;
+        }
+
+        @Override
+        public void onBindViewHolder(CourseRecyclerViewHolder holder, final int position) {
+
+            holder.tv1.setText(name[position]);
+            holder.tv2.setText(subText[position]);
+            holder.tv2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(context, "subText is:"+subText[position], Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+
+        @Override
+        public int getItemCount() {
+            return name.length;
+        }
+
+    }
+
+    public static class CourseRecyclerViewHolder extends RecyclerView.ViewHolder {
+
+        public TextView tv1,tv2;
+
+        public CourseRecyclerViewHolder(View itemView) {
+            super(itemView);
+            tv1 = (TextView) itemView.findViewById(R.id.list_title);
+            tv2 = (TextView) itemView.findViewById(R.id.list_desc);
+        }
+    }
+
+
 }

@@ -9,7 +9,7 @@ import com.codeb1ooded.megha.megha.R;
 /**
  * Created by megha on 5/8/16.
  */
-public class PositionsofResponsibilityActivity extends AppCompatActivity {
+public class PositionsOfResponsibilityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

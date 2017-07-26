@@ -15,7 +15,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -32,7 +31,7 @@
             android:label="RTI" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
             android:name="com.codeb1ooded.megha.megha.Activities.Project.Eventley"
@@ -41,7 +40,7 @@
             android:label="Eventley" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
             android:name="com.codeb1ooded.megha.megha.Activities.Project.MoviePlate"
@@ -50,7 +49,7 @@
             android:label="MoviePlate" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
             android:name="com.codeb1ooded.megha.megha.Activities.Project.OthelloBoardGame"
@@ -59,16 +58,16 @@
             android:label="Othello" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Project.ScientficCalculator"
+            android:name="com.codeb1ooded.megha.megha.Activities.Project.ScientificCalculator"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyTheme"
             android:label="Calculator" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
             android:name="com.codeb1ooded.megha.megha.Activities.Miscellaneous.EducationActivity"
@@ -76,7 +75,7 @@
             android:label="Education" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
             android:name="com.codeb1ooded.megha.megha.Activities.Miscellaneous.SocialWorkActivity"
@@ -84,15 +83,15 @@
             android:label="Social Work" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Miscellaneous.PositionsofResponsibilityActivity"
+            android:name="com.codeb1ooded.megha.megha.Activities.Miscellaneous.PositionsOfResponsibilityActivity"
             android:screenOrientation="portrait"
             android:label="Positions of Responsibility" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
         </activity>
     </application>
 
