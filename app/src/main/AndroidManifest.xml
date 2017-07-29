@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.codeb1ooded.megha.megha">
+    package="com.codeb1ooded.megha">
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"
+        <activity android:name="com.codeb1ooded.megha.Activities.AboutMeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,79 +19,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.codeb1ooded.megha.megha.SplashScreen"
+            android:name="com.codeb1ooded.megha.SplashScreen"
             android:screenOrientation="portrait"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Project.RTIManagementSystem"
+            android:name=".Project.ProjectActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.MyTheme"
-            android:label="RTI" >
+            android:theme="@style/Theme.MyTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Project.Eventley"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.MyTheme"
-            android:label="Eventley" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
-        </activity>
-        <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Project.MoviePlate"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.MyTheme"
-            android:label="MoviePlate" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
-        </activity>
-        <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Project.OthelloBoardGame"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.MyTheme"
-            android:label="Othello" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
-        </activity>
-        <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Project.ScientificCalculator"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.MyTheme"
-            android:label="Calculator" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
-        </activity>
-        <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Miscellaneous.EducationActivity"
+            android:name="com.codeb1ooded.megha.Activities.Miscellaneous.EducationActivity"
             android:screenOrientation="portrait"
             android:label="Education" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Miscellaneous.SocialWorkActivity"
+            android:name="com.codeb1ooded.megha.Activities.Miscellaneous.SocialWorkActivity"
             android:screenOrientation="portrait"
             android:label="Social Work" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.Activities.AboutMeActivity"  />
         </activity>
         <activity
-            android:name="com.codeb1ooded.megha.megha.Activities.Miscellaneous.PositionsOfResponsibilityActivity"
+            android:name="com.codeb1ooded.megha.Activities.Miscellaneous.PositionsOfResponsibilityActivity"
             android:screenOrientation="portrait"
             android:label="Positions of Responsibility" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.codeb1ooded.megha.megha.Activities.AboutMeActivity"  />
+                android:value="com.codeb1ooded.megha.Activities.AboutMeActivity"  />
         </activity>
     </application>
 

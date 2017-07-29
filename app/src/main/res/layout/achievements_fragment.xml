@@ -6,7 +6,7 @@
     android:layout_gravity="center"
     android:background="@color/colorDarkest">
 
-    <com.codeb1ooded.megha.megha.CustomLayout.AutoSwitchViewPager
+    <com.codeb1ooded.meghaCustomLayout.AutoSwitchViewPager
         android:id="@+id/containerAchievementsFragment"
         android:layout_margin="@dimen/margin"
         android:layout_width="match_parent"

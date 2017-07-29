@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 25
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.igdtuw.megha.megha"
+        applicationId "com.codeb1ooded.megha"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 51
@@ -48,9 +48,9 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.android.support:cardview-v7:23.0.1'
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile "com.android.support:design:$rootProject.supportLibraryVersion"
+    compile "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
     compile 'com.robohorse.pagerbullet:pagerbullet:1.0.5'
 
     // library for material icon: https://github.com/code-mc/material-icon-lib
@@ -65,7 +65,7 @@ dependencies {
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
 
     // libraries for view hover: https://github.com/daimajia/AndroidViewHover
-    compile "com.android.support:support-v4:23.+"
+    compile "com.android.support:support-v4:$rootProject.supportLibraryVersion"
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.daimajia.easing:library:1.0.0@aar'
     compile 'com.daimajia.androidanimations:library:1.1.2@aar'
@@ -73,4 +73,10 @@ dependencies {
 
     // library for slidable activity: https://github.com/r0adkll/Slidr
     compile 'com.r0adkll:slidableactivity:2.0.5'
+
+    // library for FireBase services
+    compile "com.google.firebase:firebase-crash:$rootProject.firebaseServicesLibraryVersion"
+    compile "com.google.firebase:firebase-core:$rootProject.firebaseServicesLibraryVersion"
+    compile "com.google.firebase:firebase-messaging:$rootProject.firebaseServicesLibraryVersion"
 }
+apply plugin: 'com.google.gms.google-services'

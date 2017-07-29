@@ -79,6 +79,7 @@
             android:text="@string/my_name"
             android:layout_below="@+id/cv_logo"
             android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
             android:layout_marginTop="@dimen/std_margin"
             android:gravity="center"
             />
@@ -100,7 +101,7 @@
             android:id="@+id/university_text"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/icon_size"
-            android:text="@string/sophomore_text"
+            android:text="@string/senior_text"
             android:textSize="16sp"
             android:textColor="@color/colorLightest"
             android:gravity="center_vertical|left"
@@ -272,7 +273,7 @@
             app:headImageId="@drawable/airplane"
             app:headImageWidth="240"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentLeft="true" />
 
     </RelativeLayout>
 
