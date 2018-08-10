@@ -5,7 +5,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="my_name">Megha Aggarwal</string>
+    <string name="my_name">Megha Aggarwal </string>
+    <string name="codeb1ooded"> CODEB1OODED </string>
     <string name="my_title">It\'s not about what you want it\'s about how hard you want it</string>
     <string name="short_desc">I am currently pursuing my Bachelors in Technology in Computer Science from IGDTUW. I love to code and see how it can changed the world in a way we can\'t event think of. Android App Development, Algorithms, and Operating Systems fascinates me.</string>
     <string name="my_github_username">codeb1ooded</string>
@@ -16,8 +17,9 @@
     <string name="email_id">meghaaggarwal493@gmail.com</string>
 
     <string name="cv_text">CV</string>
-    <string name="android_developer">Android developer</string>
-    <string name="senior_text">Full time senior at IGDTUW</string>
+    <string name="android_developer">4 Software Engineer</string>
+    <string name="microsoft_text"> Software Engineer at Microsoft </string>
+    <string name="university_text"> Graduated from IGDTUW</string>
     <string name="project_text">Projects</string>
     <string name="for_more_text">For more</string>
     <string name="tell_blog">Blog: codeb1ooded.github.io</string>
