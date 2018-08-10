@@ -54,6 +54,20 @@ public class WorkExperience implements Constants, Projects, URLs {
         ArrayList<WorkExperience> workExperiences = new ArrayList<>();
         ArrayList<WorkProject> workProject;
 
+        // Work Project for Microsoft
+        workProject = new ArrayList<>();
+        workProject.add(new WorkProject(MICROSOFT_SFB_SRE_TITLE, MICROSOFT_SFB_SRE_DESCRIPTION,
+                "Software Engineer", SFB_WEBSITE_URL, "SFB Website"));
+        workExperiences.add(new WorkExperience(WORK_TITLE_MICROSOFT, WORK_DESCRIPTION_MICROSOFT,
+                WORK_ROLE_MICROSOFT, workProject));
+
+        // Work Project for The Testament
+        workProject = new ArrayList<>();
+        workProject.add(new WorkProject(THE_TESTAMENT_MARKET_ACQUIRE_TITLE, THE_TESTAMENT_MARKET_ACQUIRE_DESCRIPTION,
+                "App Developer", MARKET_ACQUIRE_PS_URL, "Play Store"));
+        workExperiences.add(new WorkExperience(WORK_TITLE_THE_TESTAMENT, WORK_DESCRIPTION_THE_TESTAMENT,
+                WORK_ROLE_THE_TESTAMENT, workProject));
+
         // Work project for creapptic technology
         workProject = new ArrayList<>();
         workProject.add(new WorkProject(CREAPPTIC_TRADING_ADDA_TITLE, CREAPPTIC_TRADING_ADDA_DESCRIPTION,
@@ -63,12 +77,6 @@ public class WorkExperience implements Constants, Projects, URLs {
         workExperiences.add(new WorkExperience(WORK_TITLE_CREAPPTIC, WORK_DESCRIPTION_CREAPPTIC,
                 WORK_ROLE_CREAPPTIC, workProject));
 
-        workProject = new ArrayList<>();
-        workProject.add(new WorkProject(THE_TESTAMENT_MARKET_ACQUIRE_TITLE, THE_TESTAMENT_MARKET_ACQUIRE_DESCRIPTION,
-                "App Developer", MARKET_ACQUIRE_PS_URL, "Play Store"));
-        workExperiences.add(new WorkExperience(WORK_TITLE_THE_TESTAMENT, WORK_DESCRIPTION_THE_TESTAMENT,
-                WORK_ROLE_THE_TESTAMENT, workProject));
-
         return workExperiences;
     }
 
@@ -77,22 +85,28 @@ public class WorkExperience implements Constants, Projects, URLs {
 
         viewType.add(WORK_EXPERIENCE_VIEW_HOLDER);
         viewType.add(WORK_PROJECT_VIEW_HOLDER);
+        viewType.add(WORK_EXPERIENCE_VIEW_HOLDER);
         viewType.add(WORK_PROJECT_VIEW_HOLDER);
         viewType.add(WORK_EXPERIENCE_VIEW_HOLDER);
+        viewType.add(WORK_PROJECT_VIEW_HOLDER);
         viewType.add(WORK_PROJECT_VIEW_HOLDER);
 
         return viewType;
     }
 
+    // Stores the index related to work experience number
     public static ArrayList<Integer> createWorkExperienceIndexDefined(){
         ArrayList<Integer> index = new ArrayList<>();
 
-        index.add(0);   // creapptic
-        index.add(0);   // creapptic project 1
-        index.add(0);   // creapptic project 2
+        index.add(0);   // Microsoft
+        index.add(0);   // Microsoft project 1
 
         index.add(1);   // the testament
         index.add(1);   // the testament project 1
+
+        index.add(2);   // creapptic
+        index.add(2);   // creapptic project 1
+        index.add(2);   // creapptic project 2
 
         return index;
     }
@@ -100,12 +114,15 @@ public class WorkExperience implements Constants, Projects, URLs {
     public static ArrayList<Integer> createIndexDefined(){
         ArrayList<Integer> index = new ArrayList<>();
 
-        index.add(0);   // creapptic
-        index.add(0);   // creapptic project 1
-        index.add(1);   // creapptic project 2
+        index.add(0);   // Microsoft
+        index.add(0);   // Microsoft project 1
 
         index.add(1);   // the testament
         index.add(0);   // the testament project 1
+
+        index.add(2);   // creapptic
+        index.add(0);   // creapptic project 1
+        index.add(1);   // creapptic project 2
 
         return index;
     }

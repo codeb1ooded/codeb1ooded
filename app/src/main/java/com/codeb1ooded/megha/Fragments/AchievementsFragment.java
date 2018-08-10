@@ -81,31 +81,46 @@ public class AchievementsFragment extends Fragment implements Constants {
             TextView textView = (TextView) view.findViewById(R.id.individualAchivementText);
             TextView lastTextView = (TextView) view.findViewById(R.id.individualAchivementOrganizer);
             if(section_num == 1) {
+                titleTextView.setText(SIH18_TITLE);
+                textView.setText(SIH18_CONTENT);
+                lastTextView.setText(SIH18_PRESENTER);
+            }
+            else if(section_num == 2) {
+                titleTextView.setText(WINTATHON_TITLE);
+                textView.setText(WINTATHON_CONTENT);
+                lastTextView.setText(WINTATHON_PRESENTER);
+            }
+            else if(section_num == 3) {
+                titleTextView.setText(GHCI_TITLE);
+                textView.setText(GHCI_CONTENT);
+                lastTextView.setText(GHCI_PRESENTER);
+            }
+            else if(section_num == 4) {
                 titleTextView.setText(SIH_TITLE);
                 textView.setText(SIH_CONTENT);
                 lastTextView.setText(SIH_PRESENTER);
             }
-            else if(section_num == 2) {
+            else if(section_num == 5) {
                 titleTextView.setText(AZIZ_PREMJI_AWARD_TITLE);
                 textView.setText(AZIZ_PREMJI_AWARD_CONTENT);
                 lastTextView.setText(AZIZ_PREMJI_AWARD_PRESENTER);
             }
-            else if(section_num == 3) {
+            else if(section_num == 6) {
                 titleTextView.setText(CODE_DIVA_TITLE);
                 textView.setText(CODE_DIVA_CONTENT);
                 lastTextView.setText(CODE_DIVA_PRESENTER);
             }
-            else if(section_num == 4) {
+            else if(section_num == 7) {
                 titleTextView.setText(CRYPTOCODZ_TITLE);
                 textView.setText(CRYPTOCODZ_CONTENT);
                 lastTextView.setText(CRYPTOCODZ_PRESENTER);
             }
-            else if(section_num == 5) {
+            else if(section_num == 8) {
                 titleTextView.setText(BUGWARS_TITLE);
                 textView.setText(BUGWARS_CONTENT);
                 lastTextView.setText(BUGWARS_PRESENTER);
             }
-            else if(section_num == 6) {
+            else if(section_num == 9) {
                 titleTextView.setText(CODE_N_COUNTER_TITLE);
                 textView.setText(CODE_N_COUNTER_CONTENT);
                 lastTextView.setText(CODE_N_COUNTER_PRESENTER);

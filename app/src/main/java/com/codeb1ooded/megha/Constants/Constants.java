@@ -7,18 +7,34 @@ package com.codeb1ooded.megha.Constants;
 public interface Constants {
 
     // Awards
-    String SIH_TITLE = "Smart India Hackathon Winner";
-    String SIH_CONTENT = "Lead the team (TechnoTwisters) to the first position of Smart India Hackathon under category of NCPCR";
+    String SIH18_TITLE = "Smart India Hackathon 2018, 2nd runner up";
+    String SIH18_CONTENT = "Rakshak Arohan | Team Herricane | Team Lead | Worked on the goals of enhancing police capabilities in various ways to provide safe and secure environment. It's main feature is to provide safest and shortest path to people based on previous crimes and their intensity.";
+    String SIH18_PRESENTER = "AICTE, Govt of Assam, GOI";
+
+    String WINTATHON_TITLE = "Wintathon 2017 Winner";
+    String WINTATHON_CONTENT = "ConnectMe | Team Semicolon | Android person & Pitecher | LinkedIn is focused towards business and employment related networking. With this goal, ConnectMe assist you to connect to people you met somewhere in an event, add tags to them (so that you can remember where you met them) and also summarise your chat to remember what you were talking about.";
+    String WINTATHON_PRESENTER = "LinkedIn";
+
+    String GHCI_TITLE = "Grace Hopper Celebration Scholar 2017";
+    String GHCI_CONTENT = "Scholarship | Attended Grace Hopper Celebration happened in Bangalore November 16-17, 2017";
+    String GHCI_PRESENTER = "AnitaB.org";
+
+    String SIH_TITLE = "Smart India Hackathon 2017, Winner";
+    String SIH_CONTENT = "Shikshak Aroahn | Team TechnoTwisters | Team Lead | Worked on providing real-time attendance of teachers as well as student-teacher ratio for govt. schools.";
     String SIH_PRESENTER = "-AICTE, i4c, NCPCR";
-    String AZIZ_PREMJI_AWARD_TITLE = "Aziz Premji Award";
-    String AZIZ_PREMJI_AWARD_CONTENT = "Awarded Aziz Premji Award by Vivekanand School at Fragrance 2013-14 for displaying excellence in the field of IT";
-    String AZIZ_PREMJI_AWARD_PRESENTER = "-Vivekanad School";
-    String CODE_DIVA_TITLE = "CodeDiva";
-    String CODE_DIVA_CONTENT = "I secured second position in a coding competition held by CSI-IGDTUW in association with HackerRank";
-    String CODE_DIVA_PRESENTER = "-IGDTUW";
-    String CRYPTOCODZ_TITLE = "Crytocodz";
-    String CRYPTOCODZ_CONTENT = "Secured first position in Cryptocodz-14 and second position in Cryptocodz-13, held under Annual Cyber Celebration, Technowiz by Vivekanand Schhol";
+
+    String AZIZ_PREMJI_AWARD_TITLE = "Aziz Premji Award, Awarded";
+    String AZIZ_PREMJI_AWARD_CONTENT = "Fragrance 2013-14 | For displaying excellence in the field of IT";
+    String AZIZ_PREMJI_AWARD_PRESENTER = "Vivekanand School";
+
+    String CODE_DIVA_TITLE = "CodeDiva, 2nd position";
+    String CODE_DIVA_CONTENT = "CSI-IGDTUW,  HackerRank | Coding competition";
+    String CODE_DIVA_PRESENTER = "IGDTUW";
+
+    String CRYPTOCODZ_TITLE = "Crytocodz, Winner";
+    String CRYPTOCODZ_CONTENT = "Technowiz | Coding Competition | 1st position in Cryptocodz-14 and 2nd position in Cryptocodz-13";
     String CRYPTOCODZ_PRESENTER = "-Vivekanand School";
+
     String BUGWARS_TITLE = "Bugwars";
     String BUGWARS_CONTENT = "Secured third rank in Bugwars with team, organised by IEEE IGDTUW Student Chapter";
     String BUGWARS_PRESENTER = "-IGDTUW";
@@ -48,11 +64,14 @@ public interface Constants {
     String EDUCATION_PERCENTAGE[] = {"86.23%", "94.6%", "10 CGPA"};
 
     // Work experience strings
-    String WORK_TITLE_CREAPPTIC = "Creapptic Technologies";
-    String WORK_DESCRIPTION_CREAPPTIC = "Worked as Mobile App Developer Intern";
-    String WORK_ROLE_CREAPPTIC = "Mobile App Developer";
+    String WORK_TITLE_MICROSOFT = "Microsoft";
+    String WORK_DESCRIPTION_MICROSOFT = "June 2018 - Current | Skype Infra Hyd | Working on automating various processes done manually";
+    String WORK_ROLE_MICROSOFT = "Software Engineer";
     String WORK_TITLE_THE_TESTAMENT = "The Testament";
-    String WORK_DESCRIPTION_THE_TESTAMENT = "Worked as Mobile App Developer Intern";
+    String WORK_DESCRIPTION_THE_TESTAMENT = "June 2017 | Market Acquire | Worked on various aspects like code improvements, UI modifications, testing, etc.";
     String WORK_ROLE_THE_TESTAMENT = "Mobile App Developer";
+    String WORK_TITLE_CREAPPTIC = "Creapptic Technologies";
+    String WORK_DESCRIPTION_CREAPPTIC = "Aug 2016 - Nov 2016 | Tradding Adda, Mysore Rotary West | Worked on adding some features to apps";
+    String WORK_ROLE_CREAPPTIC = "Mobile App Developer";
 
 }

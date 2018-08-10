@@ -8,9 +8,39 @@ import com.codeb1ooded.megha.R;
 
 public interface Projects {
 
+    // Project : Rakshak Arohan
+    String RAKSHAK_AROHAN_NAME = "Rakshak Arohan";
+    String RAKSHAK_AROHAN_DESCRIPTION = "";
+    String RAKSHAK_AROHAN_GITHUB_LINK = "";
+    String RAKSHAK_AROHAN_TECHNOLOGIES_USED = "";
+    String RAKSHAK_AROHAN_DEMO_LINK = "";
+    String RAKSHAK_AROHAN_DEVELOPERS = "";
+    String RAKSHAK_AROHAN_MENTORS = "";
+    int RAKSHAK_AROHAN_IMAGES_ARRAY[] = new int[]{};
+
+    // Project : EmpowerHer++
+    String EMPOWERHER_NAME = "Shikshak Arohan";
+    String EMPOWERHER_DESCRIPTION = "";
+    String EMPOWERHER_GITHUB_LINK = "";
+    String EMPOWERHER_TECHNOLOGIES_USED = "";
+    String EMPOWERHER_DEMO_LINK = "";
+    String EMPOWERHER_DEVELOPERS = "";
+    String EMPOWERHER_MENTORS = "";
+    int EMPOWERHER_IMAGES_ARRAY[] = new int[]{};
+
+    // Project : Shikshak Arohan
+    String SHIKSHAK_AROHAN_NAME = "Shikshak Arohan";
+    String SHIKSHAK_AROHAN_DESCRIPTION = "";
+    String SHIKSHAK_AROHAN_GITHUB_LINK = "";
+    String SHIKSHAK_AROHAN_TECHNOLOGIES_USED = "";
+    String SHIKSHAK_AROHAN_DEMO_LINK = "";
+    String SHIKSHAK_AROHAN_DEVELOPERS = "";
+    String SHIKSHAK_AROHAN_MENTORS = "";
+    int SHIKSHAK_AROHAN_IMAGES_ARRAY[] = new int[]{};
+
     // Project : RTI management system
     String RTI_NAME = "RTI Management System";
-    String RTI_DESCRIPTION = "RTI management in government institutions is pen and paper based. Due to this it creates lot of issues like mismanagement, diffulty in analysis &amp; report generateion, redundancy, storage problems, etc. This project focuses on automating this RTI system in government institutions to get rid of most of the problems caused by pen and paper based system.";
+    String RTI_DESCRIPTION = "RTI management in government institutions is pen and paper based. Due to this it creates lot of issues like mismanagement, difficulty in analysis &amp; report generateion, redundancy, storage problems, etc. This project focuses on automating this RTI system in government institutions to get rid of most of the problems caused by pen and paper based system.";
     String RTI_GITHUB_LINK = "https://github.com/codeb1ooded/RTI_Automation";
     String RTI_TECHNOLOGIES_USED = "Frontend Development: HTML, CSS, Bootstrap, JS \n Backend Development: PHP \n Database Storage: XAMPP, MySQL Database";
     String RTI_DEMO_LINK = "https://rti-igdtuw.000webhostapp.com";
@@ -62,6 +92,16 @@ public interface Projects {
     int CALCULATOR_IMAGES_ARRAY[] = new int[]{R.drawable.project_calc1, R.drawable.project_calc2, R.drawable.project_calc3, R.drawable.project_calc4,
             R.drawable.project_calc5, R.drawable.project_calc6, R.drawable.project_calc7};
 
+    // Work Project (Skype for Business)
+    String MICROSOFT_SFB_SRE_TITLE = "Skype For Business, SRE";
+    String MICROSOFT_SFB_SRE_DESCRIPTION = "Working on Skype Infra to automate various processes done manually";
+    String SFB_WEBSITE_URL = "https://www.skype.com/en/business/";
+
+    // Work Project (The Testament)
+    String THE_TESTAMENT_MARKET_ACQUIRE_TITLE = "MARKET ACQUIRE";
+    String THE_TESTAMENT_MARKET_ACQUIRE_DESCRIPTION = "Market Acquire is a business-specific data management tool developed by The Testament which effortlessly manages the registration data collected on field.";
+    String MARKET_ACQUIRE_PS_URL = "https://play.google.com/store/apps/details?id=in.thetestament.market_acquire";
+
     // Work Project details
     String CREAPPTIC_TRADING_ADDA_TITLE = "TRADING ADDA";
     String CREAPPTIC_TRADING_ADDA_DESCRIPTION = "Useful Mobile Application for Online Stocks, Commodity and Forex traders with features like Data calendar and Forums";
@@ -70,10 +110,5 @@ public interface Projects {
     String CREAPPTIC_MYSORE_WEST_TITLE = "MYSORE ROTARY WEST";
     String CREAPPTIC_MYSORE_WEST_DESCRIPTION = "Mobile App for Members of Rotary Club of Mysore West. Features include events, member directory, photo gallery and club bulletin. Get alerts for birthdays, anniversaries and reminders for events.";
     String MYSORE_WEST_PS_URL = "https://play.google.com/store/apps/details?id=naddy.rotary";
-
-    // Work Project (The Testament)
-    String THE_TESTAMENT_MARKET_ACQUIRE_TITLE = "MARKET ACQUIRE";
-    String THE_TESTAMENT_MARKET_ACQUIRE_DESCRIPTION = "Market Acquire is a business-specific data management tool developed by The Testament which effortlessly manages the registration data collected on field.";
-    String MARKET_ACQUIRE_PS_URL = "https://play.google.com/store/apps/details?id=in.thetestament.market_acquire";
 
 }

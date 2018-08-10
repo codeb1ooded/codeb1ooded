@@ -7,7 +7,7 @@ package com.codeb1ooded.megha.Constants;
 public interface Counts {
 
     // number of fragments
-    int ACHIEVEMENT_FRAGMENTS = 7;
+    int ACHIEVEMENT_FRAGMENTS = 10;
     int COURSE_FRAGMENTS = 3;
     int SKILL_FRAGMENTS = 11;
 
