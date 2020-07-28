@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "323021909785",
+    "firebase_url": "https://codeb1ooded-4499f.firebaseio.com",
+    "project_id": "codeb1ooded-4499f",
+    "storage_bucket": "codeb1ooded-4499f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323021909785:android:cbd3ca29d6e8c5d4",
+        "android_client_info": {
+          "package_name": "com.codeb1ooded.megha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323021909785-3qim9r33fpnn4r5er6r1id1lkpc4tefh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa07W6-yEFq2P5hVI_bhg8ttiWRh3vVTY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
