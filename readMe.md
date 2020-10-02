@@ -6,7 +6,7 @@ Life long learner | [Artist](https://www.instagram.com/freed.bird/)
 <br>
 SWE at Google | Ex- Microsoft 
 <br>
-Software Developer | Hackthon (SIH-2019, SIH-2020, Wintathon-2019) winner 
+Software Developer | Hackthon (SIH-2017, SIH-2018, Wintathon-2017) winner | Hackathon Mentor (SIH-2020)
 <br>
 Tech Community Contributor | Ex-Director @ WWC-Hyderabad 
 <br>
